@@ -1,0 +1,185 @@
+.hero__section {
+  margin-bottom: 71px;
+}
+
+.hero-box {
+  padding: 395px 18px 20px 18px;
+  height: 621px;
+
+  border-radius: 20px;
+  background-image: url(/img/hero/mobile/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero__title {
+  margin-bottom: 32px;
+  color: var(--title-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+}
+
+.hero__btns {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-bottom: 32px;
+}
+
+.buy-btn {
+  width: 120px;
+  height: 41px;
+  margin-right: 14px;
+  border-radius: 100px;
+  background: var(--accent-color);
+  border: none;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--title-color);
+  &:hover,
+  &:focus {
+      color: var(--accent-color);
+      transform: scale(1.02);
+      background-color: #FCF1E0;
+      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+
+      transition: all 350ms ease-in-out 50ms;
+  }
+}
+
+.hero__made-btn {
+  width: 159px;
+  height: 41px;
+  border-radius: 100px;
+  border: 1px solid var(--title-color);
+  background-color: transparent;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+
+  color: var(--title-color);
+  &:hover,
+  &:focus {
+      color: var(--accent-color);
+      transform: scale(1.02);
+      background-color: #FCF1E0;
+      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+
+      transition: all 350ms ease-in-out 50ms;
+  }
+}
+
+.hero__scroll {
+  display: flex;
+  align-items: center;
+}
+
+.hero__scroll-text {
+  margin-right: 12px;
+  color: var(--title-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.36px;
+}
+
+.hero__scroll-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+}
+
+.hero__scroll-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__scroll-icon {
+  width: 16px;
+  height: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__section {
+    margin-bottom: 50px;
+  }
+
+  .hero-box {
+    padding: 671px 38px 40px 38px;
+    height: 890px;
+    background-image: url(/img/hero/tablet/hero-tablet.jpg);
+  }
+
+  .hero__title {
+    width: 484px;
+    margin-bottom: 39px;
+
+    color: var(--title-color);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.84px;
+  }
+
+  .hero__btns-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .buy-btn {
+    width: 144px;
+    height: 45px;
+  }
+
+  .hero__made-btn {
+    width: 183px;
+    height: 45px;
+  }
+
+  .hero__scroll {
+    padding-bottom: 30px;
+  }
+
+  .hero__scroll-text {
+    margin-right: 14px;
+    color: var(--title-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.42px;
+  }
+
+  .hero__scroll-btn {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero__scroll-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__section {
+    margin-bottom: 72px;
+  }
+
+  .hero-box {
+    height: 600px;
+    padding-top: 381px;
+    background-image: url(/img/hero/desktop/hero-desktop.jpg);
+  }
+
+  .hero__btns {
+    margin-right: 585px;
+  }
+}

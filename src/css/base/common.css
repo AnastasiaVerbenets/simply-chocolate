@@ -1,0 +1,27 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* 
+button {
+  cursor: pointer;
+  transition-duration: 250ms;
+  transition-delay: 50ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+} */
+.span-title {
+  color: var(--accent-color);
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -0.72px;
+  }
+}
