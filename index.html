@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/simply-chocolate/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simply Chocolate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-49331645.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-e2930dbf.css">
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/simply-chocolate/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simply Chocolate</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
-  
-  <script type="module" crossorigin src="/simply-chocolate/assets/index-80c93b05.js"></script>
-  <link rel="stylesheet" href="/simply-chocolate/assets/index-d197514d.css">
-</head>
-
-<body>
-  <header>
+  <body>
+    <header>
     <div class="container">
         <div class="header__div">
             <a class="header__logo"> <span class="span__italic">SIMPLY </span> CHOCOLATE</a>
@@ -122,7 +131,7 @@
         </div>
       </div> -->
 </header>
-  <section class="hero__section" id="hero">
+    <section class="hero__section" id="hero">
     <div class="container">
       <div class="hero-box">
         <h1 class="hero__title">
@@ -154,7 +163,7 @@
       </div>
     </div>
   </section>
-  <section class="advantages__section">
+    <section class="advantages__section">
   <div class="container">
     <ul class="advantages__list">
       <li class="advantages__item advantages__line">
@@ -203,7 +212,7 @@
     </ul>
   </div>
 </section>
-  <section class="ingredients__section">
+    <section class="ingredients__section">
   <div class="container">
     <h2 class="ingredients__title">
       IT ALL ADDS UP TO ONE EXCEPTIONAL <span class="span-title">TASTE</span> SENSATION
@@ -367,7 +376,7 @@
     </ul>
   </div>
 </section>
-  <section class="made__section" id="made">
+    <section class="made__section" id="made">
   <div class="container">
     <h2 class="made__title">
       HOW IT’S <span class="span-title">MADE?</span>
@@ -425,12 +434,12 @@
   </div>
 </section>
 
-  <section class="products" id="products">
+    <section class="products" id="products">
   <div class="container">
     <h2 class="products__title">
       OUR <span class="span-title">products</span>
     </h2>
-    <div class="swipper-container">
+    <div class="swiper products__swiper">
       <ul class="products__list swiper-wrapper">
         <li class="products__item swiper-slide">
           <img
@@ -525,12 +534,12 @@
           <button type="button" class="products__btn">54 UAH</button>
         </li>
       </ul>
-      <div class="swipper__pagination"></div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
 </section>
 
-    <section class="sellers" id="sellers">
+      <section class="sellers" id="sellers">
     <div class="container">
       <h2 class="sellers__title"><span class="span-title"> TOP </span> SELLERS</h2>
       <ul class="sellers__list">
@@ -609,7 +618,7 @@
   </section>
 </html>
 
-  <section class="opinions" id="opinions">
+    <section class="opinions" id="opinions">
     <div class="container">
         <h2 class="opinions__title">
             <span class="span-title">
@@ -684,7 +693,7 @@
         </button>
     </div>
 </section>
-  <section class="subscribe">
+    <section class="subscribe">
   <div class="container">
     <h2 class="subscribe__title">exPLORE OUR NEW CHOCOLATE FIRST</h2>
     <p class="subscribe__text">
@@ -697,7 +706,7 @@
   </div>
 </section>
 
-  <footer id="footer" class="footer">
+    <footer id="footer" class="footer">
   <div class="container">
     <div class="footer__info">
       <h2 class="footer__title">
@@ -774,8 +783,8 @@
 </footer>
 
 
-  <!-- modals -->
-  <!-- <div class="submit-modal__backdrop">
+    <!-- modals -->
+    <!-- <div class="submit-modal__backdrop">
     <div class="submit-modal__container">
       <picture>
         <source
@@ -822,9 +831,7 @@
     </div>
   </div> -->
 
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
-  
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+  </body>
 </html>
