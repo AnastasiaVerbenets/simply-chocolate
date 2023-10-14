@@ -6,7 +6,6 @@
 
 .footer__title {
   color: var(--title-color);
-  font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
   line-height: 28px;
@@ -14,10 +13,26 @@
   width: 300px;
 
   margin-bottom: 32px;
+
+  transition: color 200ms ease-in-out 50ms;
 }
-.footer__span {
+
+.footer__title:hover,
+.footer__title:focus {
   color: var(--accent-color);
 }
+
+.footer__span {
+  color: var(--accent-color);
+
+  /* transition: color 350ms ease-in-out 50ms; */
+}
+
+/* .footer__title:hover .footer__span,
+.footer__title:focus .footer__span {
+  color: var(--title-color);
+} */
+
 .footer__list-box {
   display: flex;
   justify-content: space-between;
@@ -25,7 +40,6 @@
 
 .contact__title {
   color: var(--title-color);
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
   line-height: 18px;
@@ -34,12 +48,13 @@
 
 .contact__link {
   color: var(--title-color);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
+
+  transition: color 350ms cubic-bezier(.12,.75,.57,.14) 50ms;
 
   &:not(:last-child) {
     margin-bottom: 4px;
@@ -57,6 +72,12 @@
   height: 22px;
   fill: transparent;
   stroke: var(--title-color);
+
+  transition: stroke 300ms cubic-bezier(.12,.75,.57,.14) 50ms;
+}
+.footer__icon:hover,
+.footer__icon:focus {
+  stroke: var(--accent-color);
 }
 .icon-tab {
   display: none;
@@ -71,15 +92,21 @@
 
 .footer__item {
   color: var(--title-color);
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
   letter-spacing: -0.28px;
+}
 
-  &:not(:last-child) {
-    margin-bottom: 18px;
-  }
+.footer__item:hover,
+.footer__item:focus,
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--accent-color);
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 18px;
 }
 
 @media screen and (min-width: 768px) {
@@ -133,12 +160,12 @@
   }
 }
 
-@media screen and (min-width:1200px){
-    .footer__title {
-        margin-right: 543px;
-      }
+@media screen and (min-width: 1200px) {
+  .footer__title {
+    margin-right: 543px;
+  }
 
-      .contact__container {
-        margin-right: 63px;
-      }
+  .contact__container {
+    margin-right: 63px;
+  }
 }
