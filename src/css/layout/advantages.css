@@ -1,6 +1,5 @@
-.advantages__section {
+.advantages {
     background-color: var(--bck-color);
-    margin-bottom: 72px;
 }
 
 .advantages__list {
