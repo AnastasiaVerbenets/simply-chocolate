@@ -1,8 +1,4 @@
-.ingredients__section {
-    margin-bottom: 72px;
-}
-
-.ingredients__section .container {
+.ingredients .container {
     display: flex;
     align-items: center;
     flex-direction: column;
