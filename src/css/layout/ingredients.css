@@ -1,0 +1,140 @@
+.ingredients .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ingredients__title {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.ingredients__text {
+    margin-bottom: 32px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* .ingredients__list {
+}
+.ingredients__item {
+}
+
+.ingredients__item:hover {
+    
+} */
+
+.ingredients__front {
+    width: 335px;
+    height: 270px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+.ingredients__front-orange {
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.ingredients__front-transparent {
+    background-color: transparent;
+    border-color: var(--accent-color);
+}
+
+.ingredients__front-transparent .ingredients__item-title {
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+
+.ingredients__front-purple {
+    background-color: var(--bck-color);
+    border: none;
+}
+
+.ingredients__item-title {
+    padding-left: 28px;
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+}
+
+.ingredients__img {
+    padding: 28px 55px;
+}
+
+.ingredients__hover {
+    display: none;
+}
+
+/* .ingredients__hover-container {
+}
+.ingredients__hover-title {
+}
+.ingredients__hover-btns {
+}
+.ingredients__btn-orange {
+}
+.ingredients__btn-white {
+}
+.ingredients__text-box {
+}
+.ingredients__hover-text {
+}
+.ingredients__item__title {
+} */
+
+@media screen and (min-width: 768px) {
+    .ingredients__section {
+        margin-bottom: 100px;
+    }
+
+    .ingredients__title {
+        font-size: 24px;
+        width: 411px;
+        letter-spacing: -0.72px;
+    }
+
+    .ingredients__text {
+        width: 486px;
+    }
+
+    .ingredients__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .ingredients__section {
+        margin-bottom: 128px;
+    }
+
+    .ingredients__list {
+        
+        gap: 19px;
+    }
+
+    .ingredients__front {
+        width: 270px;
+        
+    }
+
+    /* .ingredients__item-title {
+        
+    }
+
+    .ingredients__img {
+
+    } */
+}

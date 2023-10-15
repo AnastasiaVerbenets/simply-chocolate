@@ -1,36 +1,36 @@
-<div class="submit-modal__backdrop">
+<div class="submit-modal__backdrop is-hidden-submit" id="submit-modal">
+  <div class="submit-modal__first-container">
     <div class="submit-modal__container">
       <picture>
         <source
-          media="(max-width: 1199px)"
+          media="(min-width: 1200px)"
           srcset="
-          ./img/pop-up/mobile/pop-up-mobile.jpg 1x,
-          ./img/pop-up/mobile/pop-up-mobile@2x.jpg 2x
+            /img/pop-up/desktop/pop-up-desktop.jpg 1x,
+            /img/pop-up/desktop/pop-up-desktop@2x.jpg 2x
           "
         />
         <source
-          media="(min-width: 1200px)"
-          srcset="
-            ./img/pop-up/desktop/pop-up-desktop.jpg 1x,
-            ./img/pop-up/desktop/pop-up-desktop@2x.jpg 2x
-          "
-        />
+        media="(max-width: 1199px)"
+        srcset="
+        /img/pop-up/mobile/pop-up-mobile.jpg 1x,
+        /img/pop-up/mobile/pop-up-mobile@2x.jpg 2x
+        "
+      />
         <img
-          src="./img/pop-up/mobile/pop-up-mobile.jpg"
+          src="/img/pop-up/mobile/pop-up-mobile.jpg"
           alt="pop-up"
           class="submit-modal__img"
         />
       </picture>
       <button class="submit-modal__btn-close">
-        <svg class="submit-modal__close-img">
-          <use href="./img/icons/symbol-defs.svg#icon-close-modal"></use>
+        <svg class="submit-modal__close-icon">
+          <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
         </svg>
       </button>
       <h2 class="submit-modal__title">
         Explore our <br /><span class="span">new chocolate</span> first!
       </h2>
       <form class="submit-modal__form" id="submit-modal-form">
-        <div class="submit-modal__form__box">
           <input
             type="text"
             placeholder="Enter your email"
@@ -40,7 +40,7 @@
             data-max-length="30"
           />
           <button type="submit" class="submit-modal__btn">Submit</button>
-        </div>
       </form>
     </div>
+  </div>
   </div>
