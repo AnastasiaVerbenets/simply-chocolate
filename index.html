@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate/assets/index-49331645.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-3159df21.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-b1616f5a.css">
   </head>
 
   <body>
@@ -382,29 +382,38 @@
       HOW IT’S <span class="span-title">MADE?</span>
     </h2>
     <div class="made__wrapper">
-      <div class="made__img-column">
+      <a class="made__img-column" href="https://youtu.be/DISjdfkSjc8?si=zI3vdw9BSHOCt04Y" target="_blank">
         <picture>
           <source
-            srcset="/simply-chocolate/assets/made-desktop-b85ef13c.jpg 1x, /simply-chocolate/assets/made-desktop@2x-fff42952.jpg 2x"
+            srcset="
+              ../img/made/desktop/made-desktop.jpg    1x,
+              ../img/made/desktop/made-desktop@2x.jpg 2x
+            "
             media="(min-width: 1200px)"
           />
           <source
-            srcset="/simply-chocolate/assets/made-tablet-14e1b7ba.jpg 1x, /simply-chocolate/assets/made-tablet@2x-d509d126.jpg 2x"
+            srcset="
+              ../img/made/tablet/made-tablet.jpg    1x,
+              ../img/made/tablet/made-tablet@2x.jpg 2x
+            "
             media="(min-width: 768px)"
           />
           <source
-            srcset="/simply-chocolate/assets/made-mobile-20078c35.jpg 1x, /simply-chocolate/assets/made-mobile@2x-e92da275.jpg 2x"
-            media="(min-width: 375px)"
+            srcset="
+              ../img/made/mobile/made-mobile.jpg    1x,
+              ../img/made/mobile/made-mobile@2x.jpg 2x
+            "
+            media="(max-width: 768px)"
           />
           <img
-            src="/simply-chocolate/assets/made-mobile-20078c35.jpg"
+            src="../img/made/mobile/made-mobile.jpg"
             alt="making chocolate"
           />
         </picture>
         <svg class="made__wrapper-icon">
-          <use href="/simply-chocolate/assets/symbol-defs-5d1ec03a.svg#icon-play"></use>
+          <use href="../img/icons/symbol-defs.svg#icon-play"></use>
         </svg>
-      </div>
+      </a>
       <div class="made__recipe-column">
         <h3 class="made__recipe-title">
           Try our chocolates today and discover the perfect balance of flavor
@@ -541,7 +550,9 @@
 
       <section class="sellers section" id="sellers">
     <div class="container">
-      <h2 class="sellers__title"><span class="span-title"> TOP </span> SELLERS</h2>
+      <h2 class="sellers__title">
+        <span class="span-title"> TOP </span> SELLERS
+      </h2>
       <ul class="sellers__list">
         <li class="sellers__item">
           <div class="sellers__item__header">
@@ -554,7 +565,7 @@
                 srcset="/simply-chocolate/assets/1-tablet-1dac053c.jpg 1x, /simply-chocolate/assets/1-tablet-1dac053c.jpg @2x.jpg 2x"
                 media="(min-width: 375px)"
               />
-              <img src="/simply-chocolate/assets/1-desktop-a28c59c6.jpg" alt="" />
+              <img src="../img/top-sellers/desktop/1-desktop.jpg" alt="" />
             </picture>
           </div>
           <div class="sellers__item__footer">
@@ -577,7 +588,7 @@
                 srcset="/simply-chocolate/assets/2-tablet-64476b0d.jpg 1x, /simply-chocolate/assets/2-tablet-64476b0d.jpg @2x.jpg 2x"
                 media="(min-width: 375px)"
               />
-              <img src="/simply-chocolate/assets/2-desktop-b6397aef.jpg" alt="" />
+              <img src="../img/top-sellers/desktop/2-desktop.jpg" alt="" />
             </picture>
           </div>
           <div class="sellers__item__footer">
@@ -593,7 +604,7 @@
                 srcset="/simply-chocolate/assets/3-desktop-d903788c.jpg 1x, /simply-chocolate/assets/3-desktop-d903788c.jpg @2x.jpg 2x"
                 media="(min-width: 1200px)"
               />
-              <img src="/simply-chocolate/assets/3-desktop-d903788c.jpg" alt="" />
+              <img src="../img/top-sellers/desktop/3-desktop.jpg" alt="" />
             </picture>
           </div>
           <div class="sellers__item__footer">
@@ -606,16 +617,194 @@
       <div class="sellers__info">
         <p class="sellers__text">
           Crazy enough chocolate originates from a bean just like the coffee
-          bean called Cacao. Cacao has been around for thousands of years
-          and was first discovered by the Native American tribe called the
-          Mayans.
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
         </p>
-        <button class="buy__btn" type="button">
-          <a href="#buy-now__modal">Buy now</a>
-        </button>
+        <a href="#buy-now__modal">
+          <button class="buy__btn" type="button">Buy now</button></a
+        >
       </div>
     </div>
   </section>
+
+  <!-- buy now modal section -->
+
+  <div class="buy-now__overlay" id="buy-now__modal">
+    <div class="buy-now__modal">
+      <div class="buy-now__modal__container">
+        <a href="#" class="buy-now__close">
+          <div>
+            <svg height="24" width="24" stroke="var(--bck-color)">
+              <use href="../img/icons/symbol-defs.svg#icon-close-modal"></use>
+            </svg></div
+        ></a>
+        <h2 class="buy-now__title"><span class="span">BUY</span> NOW</h2>
+        <div class="swiper-container swiper">
+          <ul class="buy-now__list swiper-wrapper">
+            <li class="buy-now__item swiper-slide">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/100g-desktop.png    1x,
+                      ../img/order/desktop/100g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/100g-mobile.png    1x,
+                      ../img/order/mobile/100g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/100g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">100g</p>
+              </div>
+            </li>
+            <li class="buy-now__item swiper-slide">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/200g-desktop.png    1x,
+                      ../img/order/desktop/200g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/200g-mobile.png    1x,
+                      ../img/order/mobile/200g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/200g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">200g</p>
+              </div>
+            </li>
+            <li class="buy-now__item swiper-slide">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/300g-desktop.png    1x,
+                      ../img/order/desktop/300g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/300g-mobile.png    1x,
+                      ../img/order/mobile/300g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/300g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">300g</p>
+              </div>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+        </div>
+        <form action="" class="buy-now__form">
+          <div class="personal-info">
+            <label class="personla-info__label">
+              <span class="personla-info__title">Personal information</span>
+              <input
+                class="personal-info__input"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="personal-info__input"
+                type="text"
+                placeholder="Surname"
+                required
+              />
+            </label>
+          </div>
+          <div class="email__field">
+            <label class="email__field">
+              <span class="email__field">Email</span>
+              <input
+                class="email__field"
+                type="email"
+                placeholder="Enter you email"
+                required
+              />
+            </label>
+          </div>
+          <div class="phone__field">
+            <label class="phone__field">
+              <span class="phone__field">Phone number</span>
+              <input
+                class="phone__field"
+                type="tel"
+                placeholder="Phone number"
+                pattern="^[ 0-9]+$"
+                title="+38 (000) 000-00-00"
+                required
+              />
+            </label>
+            <svg>
+              <use href="../img/icons/symbol-defs.svg#icon-flag"></use>
+            </svg>
+          </div>
+          <div class="card__field">
+            <label class="card__field">
+              <span class="card__field">Card</span>
+              <input
+                class="card__field"
+                type="tel"
+                placeholder="Enter card"
+                required
+              />
+            </label>
+            <svg>
+              <use href="../img/icons/symbol-defs.svg#icon-card"></use>
+            </svg>
+          </div>
+          <div class="comment__field">
+            <label class="comment__field">
+              <span class="comment__field">Comment</span>
+              <textarea
+                class="comment__field"
+                placeholder="Enter text"
+                name="Comment"
+                id=""
+                cols="30"
+                rows="3"
+              ></textarea>
+            </label>
+          </div>
+          <button class="buy-now__btn">
+            <a href="#thanks__popup"></a>Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <body>
+    <script type="text/javascript">
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+    </script>
+  </body>
 </html>
 
     <section class="opinions section" id="opinions">
