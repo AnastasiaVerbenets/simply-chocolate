@@ -11,8 +11,8 @@
 }
 
 .products__item {
-  max-width: 100%;
-  padding: 32px 52px;
+  /* max-width: 100%; */
+  padding: 32px 0;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: var(--title-color);
@@ -112,10 +112,15 @@
 .products__swiper {
   padding-bottom: 45px;
 }
+
 @media screen and (min-width: 768px) {
   .products__item {
-    padding: 32px 20px;
-    max-width: 270px;
+    /* padding: 32px 0; */
+    max-width: 265px;
+  }
+
+  .products__title {
+    font-size: 24px;
   }
 
   .products__swiper {
