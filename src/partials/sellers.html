@@ -120,7 +120,7 @@
             </svg></div
         ></a>
         <h2 class="buy-now__title"><span class="span-title">BUY</span> NOW</h2>
-        <div class="swiper-container swiper">
+        <div class="swiper-container">
           <ul class="buy-now__list swiper-wrapper">
             <li class="buy-now__item swiper-slide">
               <div class="buy-now__card">
@@ -205,8 +205,8 @@
         </div>
         <form action="" class="buy-now__form">
           <div class="personal-info">
-            <label class="personla-info__label">
-              <span class="personla-info__title">Personal information</span>
+            <label class="personal-info__label">
+              <p class="personal-info__title">Personal information</p>
               <input
                 class="personal-info__input"
                 type="text"
@@ -221,11 +221,11 @@
               />
             </label>
           </div>
-          <div class="email__field">
-            <label class="email__field">
-              <span class="email__field">Email</span>
+          <div class="email-field">
+            <label class="email-field__label">
+              <p class="personal-info__title">Email</p>
               <input
-                class="email__field"
+                class="personal-info__input"
                 type="email"
                 placeholder="Enter you email"
                 required
@@ -286,12 +286,6 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <script type="text/javascript">
-      var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
