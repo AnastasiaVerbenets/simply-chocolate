@@ -18,3 +18,6 @@
 @import url("./layout/opinions.css");
 @import url("./layout/subscribe.css");
 @import url("./layout/footer.css");
+
+/* components */
+@import url("./components/submit-modal.css");
