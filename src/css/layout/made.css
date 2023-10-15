@@ -16,12 +16,11 @@
 
 .made__img-column {
   position: relative;
-
-  border-radius: 15px;
   overflow: hidden;
 }
 
-.made__img-column img {
+.made__img {
+  border-radius: 15px;
   width: 100%;
 }
 
@@ -58,7 +57,7 @@
   line-height: 18px;
   letter-spacing: -0.28px;
 
-  list-style-image: url(../../img/made/bullet-point.svg);
+  list-style-image: url(/img/made/bullet-point.svg);
 
   padding-left: 12px;
 }
