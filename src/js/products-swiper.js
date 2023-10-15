@@ -27,5 +27,5 @@ const swiper = new Swiper('.swiper', {
       disableonInteraction: true,
     },
     freeMode: true,
-    speed: 700,
+    speed: 800,
   });
