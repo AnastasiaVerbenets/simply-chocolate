@@ -20,4 +20,12 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-pagination',
       clickable: true,
     },
+
+    autoplay: {
+      delay: 2000,
+      stopOnLastSlide: false,
+      disableonInteraction: true,
+    },
+    freeMode: true,
+    speed: 700,
   });
