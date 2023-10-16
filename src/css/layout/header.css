@@ -1,5 +1,5 @@
 header {
-  width: 100%;
+  /* width: 100%; */
   padding-top: 20px;
   padding-bottom: 14px;
 
@@ -34,7 +34,6 @@ header {
 .span__italic {
   font-style: italic;
   margin-right: 6px;
-  
 }
 
 .logo-icon {
@@ -45,19 +44,19 @@ header {
 .logo-icon-tab {
   display: none;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: block;
     width: 21px;
     height: 21px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     /* display: none; */
     width: 24px;
     height: 24px;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .logo-icon-mob {
     display: none;
   }
@@ -100,7 +99,8 @@ header {
 .social__icon {
   width: 24px;
   height: 24px;
-  /* fill: ; */
+  fill: #ffffff;
+  stroke: black;
   transition: stroke 500ms linear 250ms, transform 500ms linear 250ms;
 }
 
@@ -111,7 +111,7 @@ header {
 .mobile-menu__open-btn {
   background-color: transparent;
   border: none;
-  margin-left: auto;
+  margin-left: 112px;
 
   @media screen and (min-width: 1200px) {
     display: none;
@@ -123,21 +123,21 @@ header {
   width: 28px;
   height: 28px;
 
-  @media screen and (min-width:768px){
+  @media screen and (min-width: 768px) {
     width: 32px;
-  height: 32px;
+    height: 32px;
   }
 }
 
 .open-tab {
   display: none;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .open-mob {
     display: none;
   }
