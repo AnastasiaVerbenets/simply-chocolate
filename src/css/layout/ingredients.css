@@ -1,78 +1,80 @@
-.ingredients .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+/* .ingredients .container {
+} */
+.ingredients__text-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .ingredients__title {
-    margin-bottom: 24px;
-    text-align: center;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
 }
 
 .ingredients__text {
-    margin-bottom: 32px;
-    font-size: 14px;
-    text-align: center;
-}
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: -0.28px;
 
-/* .ingredients__list {
+  margin-bottom: 32px;
 }
-.ingredients__item {
-}
-
-.ingredients__item:hover {
-    
-} */
 
 .ingredients__front {
-    width: 335px;
-    height: 270px;
-    border-radius: 15px;
-    border: 1px solid;
+  width: 336px;
+  height: 270px;
+  border-radius: 15px;
+  border: 1px solid;
 }
 
 .ingredients__front-orange {
-    background-color: var(--accent-color);
-    border: none;
+  background-color: var(--accent-color);
+  border: none;
 }
 
 .ingredients__front-transparent {
-    background-color: transparent;
-    border-color: var(--accent-color);
+  background-color: transparent;
+  border-color: var(--accent-color);
 }
 
 .ingredients__front-transparent .ingredients__item-title {
-    color: var(--text-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -0.28px;
-    text-transform: uppercase;
+  color: var(--text-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
 }
 
 .ingredients__front-purple {
-    background-color: var(--bck-color);
-    border: none;
+  background-color: var(--bck-color);
+  border: none;
 }
 
 .ingredients__item-title {
-    padding-left: 28px;
-    color: var(--title-color);
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -0.28px;
-    text-transform: uppercase;
+  padding-left: 28px;
+  color: var(--title-color);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
 }
 
 .ingredients__img {
-    padding: 28px 55px;
+  padding: 28px 55px;
 }
 
 .ingredients__hover {
-    display: none;
+  display: none;
 }
 
 /* .ingredients__hover-container {
@@ -91,46 +93,78 @@
 }
 .ingredients__item__title {
 } */
+@media screen and (max-width: 767px) {
+  .ingredients__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
 
 @media screen and (min-width: 768px) {
-    .ingredients__section {
-        margin-bottom: 100px;
-    }
+  .ingredients__section {
+    margin-bottom: 100px;
+  }
 
-    .ingredients__title {
-        font-size: 24px;
-        width: 411px;
-        letter-spacing: -0.72px;
-    }
+  .ingredients__title {
+    font-size: 24px;
+    width: 411px;
+    letter-spacing: -0.72px;
+    line-height: 28px;
 
-    .ingredients__text {
-        width: 486px;
-    }
+    margin-bottom: 28px;
+  }
 
+  .ingredients__text {
+    width: 486px;
+    
+    margin-bottom: 50px;
+  }
+
+  @media screen and (max-width: 1199px) {
     .ingredients__list {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 32px;
+      gap: 32px;
+      display: grid;
     }
+
+    .ingredients__item:nth-of-type(1) {
+      grid-column: 1;
+    }
+
+    .ingredients__item:nth-of-type(2) {
+      grid-row: 2;
+    }
+
+    .ingredients__item:nth-of-type(3) {
+      grid-row-end: 3;
+    }
+
+    .ingredients__item:nth-of-type(4) {
+      grid-column: 2;
+    }
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .ingredients__section {
-        margin-bottom: 128px;
-    }
+  .ingredients__section {
+    margin-bottom: 128px;
+  }
 
-    .ingredients__list {
-        
-        gap: 19px;
-    }
+  .ingredients__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+  }
 
-    .ingredients__front {
-        width: 270px;
-        
-    }
+  .ingredients__img {
+    padding: 28px 28px;
+  }
 
-    /* .ingredients__item-title {
+  .ingredients__front {
+    width: 269px;
+    height: 270px;
+  }
+
+  /* .ingredients__item-title {
         
     }
 
