@@ -1,15 +1,8 @@
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #FAFAFA;
 }
-/* 
-button {
-  cursor: pointer;
-  transition-duration: 250ms;
-  transition-delay: 50ms;
-  &:hover {
-    transform: scale(1.05);
-  }
-} */
+
 .span-title {
   color: var(--accent-color);
   font-family: Montserrat;
