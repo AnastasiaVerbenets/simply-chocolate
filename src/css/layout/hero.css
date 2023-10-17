@@ -8,6 +8,7 @@
 
   border-radius: 20px;
   background-image: url(/img/hero/mobile/hero-mobile.jpg);
+  background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
 }
