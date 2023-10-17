@@ -1,4 +1,20 @@
-  <section class="sellers section" id="sellers">
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simply Chocolate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="../css/styles.css" />
+</head> -->
+  <section class="sellers" id="sellers">
     <div class="container">
       <h2 class="sellers__title">
         <span class="span-title"> TOP </span> SELLERS
@@ -9,15 +25,15 @@
             <picture>
               <source
                 srcset="
-              /img/top-sellers/desktop/1-desktop.jpg   1x,
-              /img/top-sellers/desktop/1-desktop.jpg @2x.jpg 2x
+              ../img/top-sellers/desktop/1-desktop.jpg   1x,
+              ../img/top-sellers/desktop/1-desktop.jpg @2x.jpg 2x
             "
                 media="(min-width: 1200px)"
               />
               <source
                 srcset="
-          /img/top-sellers/tablet/1-tablet.jpg   1x,
-          /img/top-sellers/tablet/1-tablet.jpg @2x.jpg 2x
+          ../img/top-sellers/tablet/1-tablet.jpg   1x,
+          ../img/top-sellers/tablet/1-tablet.jpg @2x.jpg 2x
         "
                 media="(min-width: 375px)"
               />
@@ -38,15 +54,15 @@
             <picture>
               <source
                 srcset="
-              /img/top-sellers/desktop/2-desktop.jpg   1x,
-              /img/top-sellers/desktop/2-desktop.jpg @2x.jpg 2x
+              ../img/top-sellers/desktop/2-desktop.jpg   1x,
+              ../img/top-sellers/desktop/2-desktop.jpg @2x.jpg 2x
             "
                 media="(min-width: 1200px)"
               />
               <source
                 srcset="
-          /img/top-sellers/tablet/2-tablet.jpg   1x,
-          /img/top-sellers/tablet/2-tablet.jpg @2x.jpg 2x
+          ../img/top-sellers/tablet/2-tablet.jpg   1x,
+          ../img/top-sellers/tablet/2-tablet.jpg @2x.jpg 2x
         "
                 media="(min-width: 375px)"
               />
@@ -64,8 +80,8 @@
             <picture>
               <source
                 srcset="
-              /img/top-sellers/desktop/3-desktop.jpg   1x,
-              /img/top-sellers/desktop/3-desktop.jpg @2x.jpg 2x
+              ../img/top-sellers/desktop/3-desktop.jpg   1x,
+              ../img/top-sellers/desktop/3-desktop.jpg @2x.jpg 2x
             "
                 media="(min-width: 1200px)"
               />
@@ -103,10 +119,11 @@
               <use href="../img/icons/symbol-defs.svg#icon-close-modal"></use>
             </svg></div
         ></a>
-        <h2 class="buy-now__title"><span class="span">BUY</span> NOW</h2>
-        <div class="swiper-container swiper">
+        <h2 class="buy-now__title"><span class="span-title">BUY</span> NOW</h2>
+        <div class="swiper-container">
           <ul class="buy-now__list swiper-wrapper">
             <li class="buy-now__item swiper-slide">
+              <div class="buy-now__card">
               <div class="buy-now__product">
                 <picture>
                   <source
@@ -129,8 +146,10 @@
               <div class="buy-now__weight">
                 <p class="weight__text">100g</p>
               </div>
+            </div>
             </li>
             <li class="buy-now__item swiper-slide">
+              <div class="buy-now__card">
               <div class="buy-now__product">
                 <picture>
                   <source
@@ -153,8 +172,10 @@
               <div class="buy-now__weight">
                 <p class="weight__text">200g</p>
               </div>
+            </div>
             </li>
             <li class="buy-now__item swiper-slide">
+              <div class="buy-now__card">
               <div class="buy-now__product">
                 <picture>
                   <source
@@ -177,14 +198,15 @@
               <div class="buy-now__weight">
                 <p class="weight__text">300g</p>
               </div>
+            </div>
             </li>
           </ul>
           <div class="swiper-pagination"></div>
         </div>
         <form action="" class="buy-now__form">
           <div class="personal-info">
-            <label class="personla-info__label">
-              <span class="personla-info__title">Personal information</span>
+            <label class="personal-info__label">
+              <p class="personal-info__title">Personal information</p>
               <input
                 class="personal-info__input"
                 type="text"
@@ -199,11 +221,11 @@
               />
             </label>
           </div>
-          <div class="email__field">
-            <label class="email__field">
-              <span class="email__field">Email</span>
+          <div class="email-field">
+            <label class="email-field__label">
+              <p class="personal-info__title">Email</p>
               <input
-                class="email__field"
+                class="personal-info__input"
                 type="email"
                 placeholder="Enter you email"
                 required
@@ -261,13 +283,9 @@
     </div>
   </div>
 
-  <body>
-    <script type="text/javascript">
-      var swiper = new Swiper('.swiper-container', {
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
-  </body>
+  <!-- <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script type="module" src="../main.js"></script>
+  </body> -->
 </html>
