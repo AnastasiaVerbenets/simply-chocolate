@@ -57,7 +57,7 @@
   line-height: 18px;
   letter-spacing: -0.28px;
 
-  list-style-image: url(/img/made/bullet-point.svg);
+  list-style-image: url(../../img/made/bullet-point.svg);
 
   padding-left: 12px;
 }
