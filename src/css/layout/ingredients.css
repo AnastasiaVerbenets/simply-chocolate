@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.ingredients__item {
+    position: relative;
+}
+
 .ingredients__front {
     width: 336px;
     height: 270px;
@@ -69,24 +73,107 @@
 
 .ingredients__hover {
     display: none;
+    width: 336px;
+    height: 270px;
+    background-color: var(--title-color);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
-/* .ingredients__hover-container {
+.ingredients__item:hover {
+    .ingredients__hover{
+        display: unset;
+    }
 }
+
+.ingredients__hover-container {
+    padding: 28px;
+}
+
 .ingredients__hover-title {
+    margin-bottom: 8px;
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.54px;
+    text-transform: uppercase;
 }
+
 .ingredients__hover-btns {
+    margin-bottom: 14px;
 }
+
 .ingredients__btn-orange {
+    border-radius: 35px;
+    background: var(--accent-color);
+    border: none;
+    padding: 6px 16px;
+
+    color: var(--title-color);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
 }
+
+.ingredients__btn-orange:hover, :focus {
+    color: var(--accent-color);
+    transform: scale(1.02);
+    background-color: #FCF1E0;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+    transition: all 350ms ease-in-out 50ms;
+}
+
 .ingredients__btn-white {
+    border-radius: 35px;
+    border: 1px solid var(--accent-color);
+    background: var(--, #FAFAFA);
+    padding: 6px 16px;
+
+    color: var(--text-color);
+    font-family: Montserrat;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
 }
+
+.ingredients__btn-white:hover, :focus {
+    transform: scale(1.02);
+    background-color: #FCF1E0;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+    transition: all 350ms ease-in-out 50ms;
+}
+
 .ingredients__text-box {
+
 }
-.ingredients__hover-text {
+
+.ingredients__hover-text, .ingredients__hover-benefit {
+    overflow: hidden;
+    color: #111;
+    text-overflow: ellipsis;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.28px;
 }
+
+.ingredients__btn-white {
+    
+}
+
+.ingredients__hover-benefit {
+    display: none;
+}
+
+.mobile-span {
+    display: none;
+}
+
 .ingredients__item__title {
-} */
+}
 @media screen and (max-width: 767px) {
     .ingredients__item:not(:last-child) {
         margin-bottom: 20px;
@@ -151,6 +238,14 @@
     .ingredients__front {
         width: 269px;
         height: 270px;
+    }
+
+    .ingredients__hover {
+        width: 270px;
+    }
+
+    .desktop-span {
+        display: none;
     }
 
     /* .ingredients__item-title {
