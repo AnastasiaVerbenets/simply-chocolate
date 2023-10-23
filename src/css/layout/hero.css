@@ -44,12 +44,12 @@
   color: var(--title-color);
   &:hover,
   &:focus {
-      color: var(--accent-color);
-      transform: scale(1.02);
-      background-color: #FCF1E0;
-      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+    color: var(--accent-color);
+    transform: scale(1.02);
+    background-color: #fcf1e0;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 
-      transition: all 350ms ease-in-out 50ms;
+    transition: all 350ms ease-in-out 50ms;
   }
 }
 
@@ -66,12 +66,12 @@
   color: var(--title-color);
   &:hover,
   &:focus {
-      color: var(--accent-color);
-      transform: scale(1.02);
-      background-color: #FCF1E0;
-      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+    color: var(--accent-color);
+    transform: scale(1.02);
+    background-color: #fcf1e0;
+    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 
-      transition: all 350ms ease-in-out 50ms;
+    transition: all 350ms ease-in-out 50ms;
   }
 }
 
@@ -87,6 +87,14 @@
   font-weight: 500;
   line-height: 14px;
   letter-spacing: -0.36px;
+  cursor: pointer;
+
+  transition: color 200ms var(--animation) 50ms;
+}
+
+.hero__scroll:hover .hero__scroll-text,
+.hero__scroll:focus .hero__scroll-text {
+  color: var(--accent-color);
 }
 
 .hero__scroll-btn {
@@ -94,6 +102,16 @@
   height: 28px;
   border-radius: 50%;
   border: none;
+
+  transition: all 200ms var(--animation) 50ms;
+}
+
+.hero__scroll:hover .hero__scroll-btn,
+.hero__scroll:focus .hero__scroll-btn {
+  background-color: var(--accent-color);
+  transform: scale(1.07);
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
+
 }
 
 .hero__scroll-link {
@@ -105,6 +123,17 @@
 .hero__scroll-icon {
   width: 16px;
   height: 16px;
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+  
+  transition: all 200ms var(--animation) 50ms;
+}
+
+.hero__scroll:hover .hero__scroll-icon,
+.hero__scroll:focus .hero__scroll-icon {
+  fill: white;
+  stroke: white;
+  transform: translatey(1.70px);
 }
 
 @media screen and (min-width: 768px) {

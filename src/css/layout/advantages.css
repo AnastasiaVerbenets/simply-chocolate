@@ -21,6 +21,13 @@
     margin-bottom: 22px;
     border-radius: 365px;
     border: 1px solid rgba(255, 255, 255, 0.50);
+
+    transition: transform 300ms var(--animation) 40ms;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
 }
 
 .advantages__icon {

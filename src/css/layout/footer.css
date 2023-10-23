@@ -13,25 +13,12 @@
   width: 300px;
 
   margin-bottom: 32px;
-
-  transition: color 200ms ease-in-out 50ms;
-}
-
-.footer__title:hover,
-.footer__title:focus {
-  color: var(--accent-color);
 }
 
 .footer__span {
   color: var(--accent-color);
-
-  /* transition: color 350ms ease-in-out 50ms; */
 }
 
-/* .footer__title:hover .footer__span,
-.footer__title:focus .footer__span {
-  color: var(--title-color);
-} */
 
 .footer__list-box {
   display: flex;
@@ -72,16 +59,20 @@
   height: 22px;
   fill: transparent;
   stroke: var(--title-color);
-
-  transition: stroke 300ms cubic-bezier(.12,.75,.57,.14) 50ms;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+    stroke 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
+
 .footer__icon:hover,
 .footer__icon:focus {
+  transform: scale(1.1);
   stroke: var(--accent-color);
 }
+
 .icon-tab {
   display: none;
 }
+
 .footer__line {
   width: 100%;
   height: 1.5px;
