@@ -11,18 +11,18 @@ const swiper = new Swiper('.swiper', {
         },
         1200: {
           slidesPerView: 4,
-          spaceBetween: 18,
+          spaceBetween: 20,
+          // spaceBetween: 29,
         },
       },
   
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
     },
 
     autoplay: {
-      delay: 2000,
+      delay: 2200,
       stopOnLastSlide: false,
       disableonInteraction: true,
     },

@@ -133,7 +133,7 @@
 .hero__scroll:focus .hero__scroll-icon {
   fill: white;
   stroke: white;
-  transform: translatey(1.70px);
+  transform: translatey(1.5px);
 }
 
 @media screen and (min-width: 768px) {
