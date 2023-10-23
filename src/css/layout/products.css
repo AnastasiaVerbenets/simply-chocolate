@@ -68,6 +68,7 @@
 
   transition: color 350ms ease-in-out 70ms;
 }
+
 .products__type {
   color: rgba(17, 17, 17, 0.7);
   font-size: 12px;
@@ -78,6 +79,7 @@
 
   margin-bottom: 18px;
 }
+
 .products__btn {
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;

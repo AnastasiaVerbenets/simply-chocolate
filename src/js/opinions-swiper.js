@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.opinions-swiper', {
     loop: true,
     breakpoints: {
         375: {
@@ -6,13 +6,12 @@ const swiper = new Swiper('.swiper', {
           spaceBetween: 0,
         },
         768: {
-          slidesPerView: 2.5,
-          spaceBetween: 18,
+          slidesPerView: 2,
+          spaceBetween: 16,
         },
         1200: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-          // spaceBetween: 29,
+          slidesPerView: 3,
+          spaceBetween: 28,
         },
       },
   
@@ -22,10 +21,10 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-      delay: 2300,
+      delay: 2200,
       stopOnLastSlide: false,
       disableonInteraction: true,
     },
     freeMode: true,
-    speed: 50,
+    speed: 800,
   });
