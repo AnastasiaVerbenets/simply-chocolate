@@ -67,6 +67,16 @@
   background: var(--accent-color);
 
   border: none;
+
+  /* &:hover,
+  &:focus {
+      color: var(--accent-color);
+      transform: scale(1.02);
+      background-color: #FCF1E0;
+      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+
+      transition: all 350ms ease-in-out 50ms;
+  } */
 }
 
 .sellers__info {

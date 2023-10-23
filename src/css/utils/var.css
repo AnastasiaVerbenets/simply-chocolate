@@ -4,5 +4,7 @@
     --text-color: #111;
     --bck-color: #1E1823;
 
-    --animation: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation: cubic-bezier(.12,.0,.57,.14);
 }
+
+/* transition: transform 400ms var(--animation) 80ms; */
