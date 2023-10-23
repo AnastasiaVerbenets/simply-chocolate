@@ -11,8 +11,8 @@
 }
 
 .products__item {
-  /* max-width: 100%; */
-  padding: 32px 0;
+  max-width: 100%;
+  padding: 32px 52px;
   border-radius: 15px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: var(--title-color);
@@ -82,9 +82,7 @@
   color: var(--text-color);
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
   text-align: center;
 
   padding: 8px 20px;
@@ -115,8 +113,7 @@
 
 @media screen and (min-width: 768px) {
   .products__item {
-    /* padding: 32px 0; */
-    max-width: 265px;
+  padding: 32px 20px;
   }
 
   .products__title {
