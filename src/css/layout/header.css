@@ -4,8 +4,8 @@ header {
   padding-bottom: 14px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 26px;
-    padding-bottom: 34px;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -152,6 +152,7 @@ header {
   .header__item:hover {
     color: var(--accent-color);
   }
+
   .list__link {
     font-weight: 500;
     font-size: 14px;
@@ -161,8 +162,7 @@ header {
 
     position: relative;
     display: block;
-    padding-bottom: 10px;
-
+    
     transition: color 400ms var(--animation) 80ms;
   }
 
