@@ -22,6 +22,7 @@
 
 .ingredients__item {
     position: relative;
+    overflow: hidden;
 }
 
 .ingredients__front {
@@ -72,19 +73,19 @@
 }
 
 .ingredients__hover {
-    display: none;
     width: 336px;
     height: 270px;
     background-color: var(--title-color);
     position: absolute;
     top: 0;
     left: 0;
+    transform: translateY(101%);
+    transition: transform 250ms ease-in;
 }
 
-.ingredients__item:hover {
-    .ingredients__hover{
-        display: unset;
-    }
+.ingredients__item:hover .ingredients__hover {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .ingredients__hover-container {
@@ -128,7 +129,7 @@
 .ingredients__btn-white {
     border-radius: 35px;
     border: 1px solid var(--accent-color);
-    background: var(--, #FAFAFA);
+    background: var(--, --title-color);
     padding: 6px 16px;
 
     color: var(--text-color);
@@ -147,6 +148,10 @@
 
 .ingredients__text-box {
 
+}
+
+.ingredients__hover-text {
+    
 }
 
 .ingredients__hover-text, .ingredients__hover-benefit {
