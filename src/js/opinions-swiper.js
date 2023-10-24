@@ -1,9 +1,12 @@
 const swiper = new Swiper('.opinions-swiper', {
     loop: true,
+    slidesPerView: 1,
+    spaceBetween: 16,
+
     breakpoints: {
         375: {
           slidesPerView: 1,
-          spaceBetween: 0,
+          spaceBetween: 16,
         },
         768: {
           slidesPerView: 2,
