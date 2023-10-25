@@ -1,8 +1,8 @@
 :root {
-    --accent-color: #FD9222;
-    --title-color: #FFF;
-    --text-color: #111;
-    --bck-color: #1E1823;
+  --accent-color: #fd9222;
+  --title-color: #fff;
+  --text-color: #111;
+  --bck-color: #1e1823;
 
-    --animation: cubic-bezier(.12,.0,.57,.14);
+  --animation: cubic-bezier(0.12, 0, 0.57, 0.14);
 }

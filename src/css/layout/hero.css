@@ -111,7 +111,6 @@
   background-color: var(--accent-color);
   transform: scale(1.07);
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
-
 }
 
 .hero__scroll-link {
@@ -125,14 +124,14 @@
   height: 16px;
   fill: var(--accent-color);
   stroke: var(--accent-color);
-  
+
   transition: all 200ms var(--animation) 50ms;
 }
 
 .hero__scroll:hover .hero__scroll-icon,
 .hero__scroll:focus .hero__scroll-icon {
-  fill: white;
-  stroke: white;
+  fill: var(--title-color);
+  stroke: var(--title-color);
   transform: translatey(1.5px);
 }
 
@@ -212,4 +211,66 @@
   .hero__btns {
     margin-right: 585px;
   }
+}
+
+/* scroll to top */
+
+.isShowBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  z-index: 100;
+
+  opacity: 1;
+  transition: opacity 350ms ease-in-out 50ms;
+}
+
+.isShowBtn.isShowBtn-hide {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.hero__scroll-top-icon {
+  transform: rotate(180deg);
+}
+
+.hero__scroll-top-text {
+  color: var(--accent-color);
+}
+
+.hero__scroll:hover .hero__scroll-top-text,
+.hero__scroll:focus .hero__scroll-top-text {
+  color: var(--title-color);
+}
+
+.hero__scroll-top-icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--title-color);
+  stroke: var(--title-color);
+
+  transition: all 200ms var(--animation) 50ms;
+}
+
+.hero__scroll:hover .hero__scroll-top-icon,
+.hero__scroll:focus .hero__scroll-top-icon {
+  fill: var(--accent-color);
+  stroke: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .hero__scroll-top-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.hero__scroll-top-btn {
+  background-color: var(--accent-color);
+}
+
+.hero__scroll:hover .hero__scroll-top-btn,
+.hero__scroll:focus .hero__scroll-top-btn {
+  background-color: var(--title-color);
 }
