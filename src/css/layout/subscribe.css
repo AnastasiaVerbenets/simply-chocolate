@@ -119,6 +119,7 @@
   margin-right: auto;
   cursor: pointer;
   font-size: 14px;
+  transition: all 350ms ease-in-out 50ms;
   &:hover,
   &:focus {
       color: var(--accent-color);
@@ -126,7 +127,6 @@
       background-color: #FCF1E0;
       box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
 
-      transition: all 350ms ease-in-out 50ms;
   }
   @media screen and (min-width: 768px) {
     font-size: 18px;

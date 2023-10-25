@@ -72,6 +72,18 @@
 
   margin: 0 auto;
   display: block;
+
+  transition: all 350ms ease-in-out 50ms;
+}
+
+.opinions__btn:hover,
+.opinions__btn:focus {
+  color: var(--title-color);
+  transform: scale(1.02);
+  background-color: var(--accent-color);
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
+
+  transition: all 350ms ease-in-out 50ms;
 }
 
 @media screen and (min-width: 768px) {
