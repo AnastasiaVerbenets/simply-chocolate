@@ -29,7 +29,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
 
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 .span__italic {
@@ -77,6 +77,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 24px;
+
     margin-left: 137px;
   }
 }
@@ -98,9 +99,10 @@ header {
 .social__icon {
   width: 24px;
   height: 24px;
-  fill: #ffffff;
+  fill: var(--title-color);
   stroke: black;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms, stroke 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms,
+  stroke 500ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   cursor: pointer;
 
   margin-right: 0;
@@ -124,6 +126,7 @@ header {
   @media screen and (min-width: 768px) {
     background-color: transparent;
     border: none;
+
     margin-right: -5px;
   }
 }
@@ -155,7 +158,7 @@ header {
 
   position: relative;
   display: block;
-  
+
   transition: color 400ms var(--animation) 80ms;
 }
 
@@ -168,12 +171,13 @@ header {
   .open-mob {
     display: none;
   }
-  
+
   .list__link::after {
     content: "";
     position: absolute;
     left: 0;
     bottom: -6px;
+
     display: block;
     width: 100%;
     height: 1.5px;
@@ -182,10 +186,9 @@ header {
     transform-origin: center right;
     transition: transform 400ms var(--animation) 80ms;
   }
-  
+
   .list__link:hover::after {
     transform: scale(1);
     transform-origin: center left;
   }
 }
-

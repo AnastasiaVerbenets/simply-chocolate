@@ -1,5 +1,13 @@
 .hero__section {
   margin-bottom: 71px;
+
+  @media screen and (min-width: 768px) {
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 72px;
+      }
 }
 
 .hero-box {
@@ -11,6 +19,19 @@
   background-color: var(--background-color);
   background-repeat: no-repeat;
   background-size: cover;
+
+  
+@media screen and (min-width: 768px) {
+    padding: 671px 38px 40px 38px;
+    height: 890px;
+    background-image: url(/img/hero/tablet/hero-tablet.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+      height: 600px;
+      padding-top: 381px;
+      background-image: url(/img/hero/desktop/hero-desktop.jpg);
+    }
 }
 
 .hero__title {
@@ -20,6 +41,17 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.6px;
+
+  @media screen and (min-width: 768px) {
+      width: 484px;
+      margin-bottom: 39px;
+  
+      color: var(--title-color);
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 34px;
+      letter-spacing: -0.84px;
+    }
 }
 
 .hero__btns {
@@ -42,15 +74,20 @@
   font-weight: 600;
 
   color: var(--title-color);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    transform: scale(1.02);
-    background-color: #fcf1e0;
-    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
+  transition: all 350ms ease-in-out 50ms;
 
-    transition: all 350ms ease-in-out 50ms;
-  }
+  @media screen and (min-width: 768px) {
+       width: 144px;
+      height: 45px;
+    }
+}
+
+.buy-btn:hover,
+.buy-btn:focus {
+  color: var(--accent-color);
+  transform: scale(1.02);
+  background-color: #fcf1e0;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 }
 
 .hero__made-btn {
@@ -64,16 +101,22 @@
   font-weight: 600;
 
   color: var(--title-color);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    transform: scale(1.02);
-    background-color: #fcf1e0;
-    box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
+  transition: all 350ms ease-in-out 50ms;
 
-    transition: all 350ms ease-in-out 50ms;
-  }
+  @media screen and (min-width: 768px) {
+  
+      width: 183px;
+      height: 45px;}
 }
+
+.hero__made-btn:hover,
+.hero__made-btn:focus {
+  color: var(--accent-color);
+  transform: scale(1.02);
+  background-color: #fcf1e0;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);}
+
+
 
 .hero__scroll {
   display: flex;
@@ -96,26 +139,6 @@
 .hero__scroll:focus .hero__scroll-text {
   color: var(--accent-color);
 }
-/* 
-.hero__scroll-btn {
-  width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  border: none;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  transition: all 200ms var(--animation) 50ms;
-} */
-
-/* .hero__scroll:hover .hero__scroll-btn,
-.hero__scroll:focus .hero__scroll-btn {
-  background-color: var(--accent-color);
-  transform: scale(1.07);
-  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
-} */
 
 .hero__scroll-link {
   display: flex;
@@ -155,41 +178,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero__section {
-    margin-bottom: 50px;
-  }
-
-  .hero-box {
-    padding: 671px 38px 40px 38px;
-    height: 890px;
-    background-image: url(/img/hero/tablet/hero-tablet.jpg);
-  }
-
-  .hero__title {
-    width: 484px;
-    margin-bottom: 39px;
-
-    color: var(--title-color);
-    font-size: 28px;
-    font-weight: 500;
-    line-height: 34px;
-    letter-spacing: -0.84px;
-  }
-
   .hero__btns-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .buy-btn {
-    width: 144px;
-    height: 45px;
-  }
-
-  .hero__made-btn {
-    width: 183px;
-    height: 45px;
   }
 
   .hero__scroll {
@@ -217,16 +209,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__section {
-    margin-bottom: 72px;
-  }
-
-  .hero-box {
-    height: 600px;
-    padding-top: 381px;
-    background-image: url(/img/hero/desktop/hero-desktop.jpg);
-  }
-
   .hero__btns {
     margin-right: 585px;
   }
@@ -270,19 +252,17 @@
   stroke: var(--title-color);
 
   transition: all 200ms var(--animation) 50ms;
+
+  @media screen and (min-width: 768px) {
+      width: 22px;
+      height: 22px;
+  }
 }
 
 .hero__scroll:hover .hero__scroll-top-icon,
 .hero__scroll:focus .hero__scroll-top-icon {
   fill: var(--accent-color);
   stroke: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .hero__scroll-top-icon {
-    width: 22px;
-    height: 22px;
-  }
 }
 
 .hero__scroll-top-link {

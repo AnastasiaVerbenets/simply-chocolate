@@ -77,7 +77,6 @@
   width: 291px;
   margin-bottom: 24px;
 
-
   @media screen and (min-width: 768px) {
     font-size: 24px;
     line-height: 116.667%;
@@ -109,7 +108,7 @@
     display: block;
   color: var( --title-color);
   font-size: 14px;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 12px 28px;
   background-color: var(--accent-color);
@@ -126,8 +125,8 @@
       transform: scale(1.02);
       background-color: #FCF1E0;
       box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
-
   }
+
   @media screen and (min-width: 768px) {
     font-size: 18px;
     padding: 14px 40px;
