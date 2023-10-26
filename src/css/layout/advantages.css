@@ -4,11 +4,15 @@
 
 .advantages__list {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .advantages__item:not(:last-child) {
     margin-bottom: 34px;
+}
+
+.advantages__item:first-child {
+    margin-bottom: 38px;
 }
 
 .advantages__circle {
