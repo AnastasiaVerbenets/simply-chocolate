@@ -96,27 +96,46 @@
 .hero__scroll:focus .hero__scroll-text {
   color: var(--accent-color);
 }
-
+/* 
 .hero__scroll-btn {
   width: 28px;
   height: 28px;
   border-radius: 50%;
   border: none;
 
-  transition: all 200ms var(--animation) 50ms;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-.hero__scroll:hover .hero__scroll-btn,
+  transition: all 200ms var(--animation) 50ms;
+} */
+
+/* .hero__scroll:hover .hero__scroll-btn,
 .hero__scroll:focus .hero__scroll-btn {
   background-color: var(--accent-color);
   transform: scale(1.07);
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
-}
+} */
 
 .hero__scroll-link {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--title-color);
+
+  transition: all 200ms var(--animation) 50ms;
+} 
+
+.hero__scroll:hover .hero__scroll-link,
+.hero__scroll:focus .hero__scroll-link {
+  background-color: var(--accent-color);
+  transform: scale(1.07);
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 }
 
 .hero__scroll-icon {
@@ -186,7 +205,7 @@
     letter-spacing: -0.42px;
   }
 
-  .hero__scroll-btn {
+  .hero__scroll-link {
     width: 38px;
     height: 38px;
   }
@@ -266,11 +285,12 @@
   }
 }
 
-.hero__scroll-top-btn {
+.hero__scroll-top-link {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
-.hero__scroll:hover .hero__scroll-top-btn,
-.hero__scroll:focus .hero__scroll-top-btn {
+.hero__scroll:hover .hero__scroll-top-link,
+.hero__scroll:focus .hero__scroll-top-link {
   background-color: var(--title-color);
 }
