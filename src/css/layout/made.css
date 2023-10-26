@@ -8,6 +8,12 @@
   text-transform: uppercase;
 
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 50px;
+  }
 }
 
 .made__title__span {
@@ -23,6 +29,16 @@
   display: none;
   width: 335px;
   height: 500px;
+
+  @media screen and (min-width: 768px) {
+    width: 710px;
+    height: 475px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    height: 400px;
+  }
 }
 
 .video-wrapper {
@@ -45,6 +61,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  @media screen and (min-width: 768px) {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .made__recipe-column {
@@ -53,6 +74,17 @@
   border-radius: 15px;
 
   background-color: var(--title-color);
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    padding: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    padding: 32px;
+    margin-left: 20px;
+  }
 }
 
 .made__recipe-title {
@@ -62,6 +94,11 @@
   line-height: 24px;
 
   margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 350px;
+    margin-bottom: 28px;
+  }
 }
 
 .made__recipe-list {
@@ -71,51 +108,27 @@
   line-height: 18px;
   letter-spacing: -0.28px;
 
-  list-style-image: url(../../img/made/bullet-point.svg);
-  
+  list-style-image: url(/img/made/bullet-point.svg);
+
   padding-left: 12px;
+
+  @media screen and (min-width: 768px) {
+    width: 464px;
+  }
 }
 
 .made__recipe-item {
   margin-bottom: 18px;
   padding-left: 6px;
+
+  @media screen and (min-width: 1200px) {
+      margin-bottom: 24px;
+    
+  }
 }
 
 .made__recipe-item:last-child {
   margin-bottom: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .made__title {
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 50px;
-  }
-
-  .made__wrapper-icon {
-    width: 44px;
-    height: 44px;
-
-  }
-
-  .made__video {
-    width: 710px;
-    height: 475px;
-  }
-
-  .made__recipe-column {
-    margin-top: 20px;
-    padding: 32px;
-  }
-
-  .made__recipe-title {
-    width: 350px;
-    margin-bottom: 28px;
-  }
-
-  .made__recipe-list {
-    width: 464px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -128,20 +141,5 @@
     border-radius: 15px;
     width: 600px;
     height: 400px;
-  }
-
-  .made__video {
-    width: 600px;
-    height: 400px;
-  }
-
-  .made__recipe-column {
-    margin-top: 0;
-    padding: 32px;
-    margin-left: 20px;
-  }
-
-  .made__recipe-item {
-    margin-bottom: 24px;
   }
 }
