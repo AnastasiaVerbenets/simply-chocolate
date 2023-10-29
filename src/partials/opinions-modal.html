@@ -1,37 +1,70 @@
-<div class="opinions__modal">
-    <div class="opinions__modal-container">
-        <h2 class="opinions__modal-title">
-            <span>
-                LEAVE A REVIEW
-            </span>
-
-            <span class="opinions__modal-wraper">
-                ABOUT
-                <span class="span">
-                    OUR CHOCOLATE
-                </span>
-            </span>
-
+<section class="backdrop-opinions is-hidden-opinions">
+  <div class="modal-opinions">
+    <div class="modal-opinions__container">
+      <div class="modal-opinions__general">
+        <h2 class="modal-opinions__title">
+          leave a review <br class="title-br" />
+          about <span class="span-title">OUR CHOCOLATE</span>
         </h2>
-        <button class="opinions__btn-close">
-            <svg class="opinions__close-icon">
-                <use href="./images/icons/symbol-defs.svg#icon-close-button"></use>
 
-            </svg>
+        <button class="modal-opinions__btn" type="button">
+          <svg class="modal-opinions__close-icon">
+            <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
+          </svg>
         </button>
-        <form class="opinions__form">
-            <input class="opinions__input" type="text" placeholder="Name">
-            <input class="opinions__input" type="text" placeholder="Email">
-            <input class="opinions__input " type="text" placeholder="Phone number">
-            <div class="opinions__tel-div">
-                <div class="opinions__tel-div-2">
-                    <label class="opinions__label" for>+380</label>
-                </div>
+      </div>
 
+      <form class="form__opinions" id="form__opinions">
+        <div class="form__opinions__container">
+          <input
+            class="form__input"
+            type="text"
+            name="username"
+            placeholder="Name"
+            pattern="[a-zA-Z]{2,15}"
+            minlength="3"
+            maxlength="15"
+          />
 
+          <input
+            class="form__input"
+            type="email"
+            name="useremail"
+            placeholder="Enter your email"
+            required
+          />
+
+          <div class="form__tel-container">
+            <input
+              class="form__input input-phone"
+              type="tel"
+              name="userphone"
+              placeholder="Phone number"
+              required
+              pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              minlength="10"
+              maxlength="12"
+              title="xx-xxx-xx-xx"
+            />
+            <div class="form__tel-phone">
+              <svg class="form__tel-icon">
+                <use href="/img/icons/symbol-defs.svg#icon-flag"></use>
+              </svg>
+              <p class="form__tel-text">+380</p>
             </div>
-            <textarea class="opinions__textarea" placeholder="Enter text"></textarea>
-            <button type="submit" class="opinions__send-button">Send</button>
-        </form>
+          </div>
+
+          <textarea
+            class="form__textarea"
+            placeholder="Enter text"
+            minlength="10"
+            maxlength="500"
+            name="comment"
+          ></textarea>
+        </div>
+
+        <button class="form__btn" type="submit">Send</button>
+      </form>
     </div>
-</div>
+  </div>
+</section>
