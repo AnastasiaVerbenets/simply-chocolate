@@ -134,10 +134,10 @@
   border: none;
 
   @media screen and (min-width: 768px) {
-    padding: 17px 40px;
-    right: 40px;
-    top: 320px;
   }
+  padding: 17px 40px;
+  right: 40px;
+  top: 320px;
 }
 
 .submit-modal__close-icon {
