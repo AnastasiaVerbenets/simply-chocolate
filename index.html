@@ -937,7 +937,8 @@
           <h2 class="opinions__name">Irina Tydnyuk</h2>
           <p class="opinions__text">
             This is simply the best chocolate around, and I'm just thrilled to
-            support a local company! Best local chocolate - world class &#58;&#41;
+            support a local company! Best local chocolate - world class
+            &#58;&#41;
           </p>
         </li>
       </ul>
@@ -1048,17 +1049,17 @@
         <source
           media="(min-width: 1200px)"
           srcset="
-            /img/pop-up/desktop/pop-up-desktop.jpg 1x,
+            /img/pop-up/desktop/pop-up-desktop.jpg    1x,
             /img/pop-up/desktop/pop-up-desktop@2x.jpg 2x
           "
         />
         <source
-        media="(max-width: 1199px)"
-        srcset="
-        /img/pop-up/mobile/pop-up-mobile.jpg 1x,
-        /img/pop-up/mobile/pop-up-mobile@2x.jpg 2x
-        "
-      />
+          media="(max-width: 1199px)"
+          srcset="
+            /img/pop-up/mobile/pop-up-mobile.jpg    1x,
+            /img/pop-up/mobile/pop-up-mobile@2x.jpg 2x
+          "
+        />
         <img
           src="/img/pop-up/mobile/pop-up-mobile.jpg"
           alt="pop-up"
@@ -1071,22 +1072,94 @@
         </svg>
       </button>
       <h2 class="submit-modal__title">
-        Explore our <br /><span class="span">new chocolate</span> first!
+        Explore our <br /><span class="span-title">new chocolate</span> first!
       </h2>
       <form class="submit-modal__form" id="submit-modal-form">
-          <input
-            type="text"
-            placeholder="Enter your email"
-            name="submit-modal__name"
-            class="submit-modal__input"
-            data-min-length="8"
-            data-max-length="30"
-          />
-          <button type="submit" class="submit-modal__btn">Submit</button>
+        <input
+          type="text"
+          placeholder="Enter your email"
+          name="submit-modal__name"
+          class="submit-modal__input"
+          data-min-length="8"
+          data-max-length="30"
+        />
+        <button type="submit" class="submit-modal__btn">Submit</button>
       </form>
     </div>
   </div>
-  </div> -->
+</div>
+ -->
+    <!-- <section class="backdrop-opinions is-hidden-opinions">
+  <div class="modal-opinions">
+    <div class="modal-opinions__container">
+      <div class="modal-opinions__general">
+        <h2 class="modal-opinions__title">
+          leave a review <br class="title-br" />
+          about <span class="span-title">OUR CHOCOLATE</span>
+        </h2>
+
+        <button class="modal-opinions__btn" type="button">
+          <svg class="modal-opinions__close-icon">
+            <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
+          </svg>
+        </button>
+      </div>
+
+      <form class="form__opinions" id="form__opinions">
+        <div class="form__opinions__container">
+          <input
+            class="form__input"
+            type="text"
+            name="username"
+            placeholder="Name"
+            pattern="[a-zA-Z]{2,15}"
+            minlength="3"
+            maxlength="15"
+          />
+
+          <input
+            class="form__input"
+            type="email"
+            name="useremail"
+            placeholder="Enter your email"
+            required
+          />
+
+          <div class="form__tel-container">
+            <input
+              class="form__input input-phone"
+              type="tel"
+              name="userphone"
+              placeholder="Phone number"
+              required
+              pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              minlength="10"
+              maxlength="12"
+              title="xx-xxx-xx-xx"
+            />
+            <div class="form__tel-phone">
+              <svg class="form__tel-icon">
+                <use href="/img/icons/symbol-defs.svg#icon-flag"></use>
+              </svg>
+              <p class="form__tel-text">+380</p>
+            </div>
+          </div>
+
+          <textarea
+            class="form__textarea"
+            placeholder="Enter text"
+            minlength="10"
+            maxlength="500"
+            name="comment"
+          ></textarea>
+        </div>
+
+        <button class="form__btn" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</section>
+ -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
