@@ -15,14 +15,14 @@
 
   padding: 14px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     width: 610px;
     padding: 24px 48px;
   }
 }
 
 .buy-now__overlay {
-  position:fixed;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -39,11 +39,10 @@
 .buy-now__close {
   margin-left: auto;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
     top: 24px;
     right: 24px;
-    
   }
 }
 
@@ -57,7 +56,6 @@
   margin-right: auto;
   margin-bottom: 32px;
 
-  font-family: Montserrat;
   font-size: 20px;
   font-weight: 600;
   line-height: 24px;
@@ -115,7 +113,6 @@
 
 .weight__text {
   color: var(--text-color);
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
@@ -132,7 +129,6 @@
 .input-title {
   color: #000;
 
-  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
@@ -150,6 +146,8 @@
   padding: 14px 18px;
 
   margin-bottom: 14px;
+
+  transition: all 350ms ease-in-out 50ms;
 }
 
 .input-field::placeholder {
@@ -158,9 +156,10 @@
 
 .input-field:focus {
   border: 1px solid #6bbbf7;
-  background: #fff;
+  background-color: #fff;
   box-shadow: 0px 0px 0px 3px rgba(107, 187, 247, 0.3),
     0px 2px 2px 0px rgba(0, 0, 0, 0.05);
+  transform: none;
 }
 
 .input-field:focus-visible {
@@ -222,6 +221,7 @@
 .comment-field:focus-visible {
   outline: none;
 }
+
 .buy-now__btn {
   margin-left: 0;
   padding: 12px 28px;
