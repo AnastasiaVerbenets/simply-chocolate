@@ -1,0 +1,169 @@
+<div class="buy-now__overlay is-hidden" data-buy-now-modal>
+  <div class="buy-now__modal">
+    <div class="buy-now__modal__container">
+      <div class="buy-now__close" data-buy-now-modal-close>
+        <svg height="24" width="24" stroke="var(--bck-color)">
+          <use href="../img/icons/symbol-defs.svg#icon-close-modal"></use>
+        </svg>
+      </div>
+      <h2 class="buy-now__title"><span class="span-title">BUY</span> NOW</h2>
+      <div class="swiper-container">
+        <ul class="buy-now__list swiper-wrapper">
+          <li class="buy-now__item swiper-slide">
+            <div class="buy-now__card">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/100g-desktop.png    1x,
+                      ../img/order/desktop/100g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/100g-mobile.png    1x,
+                      ../img/order/mobile/100g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/100g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">100g</p>
+              </div>
+            </div>
+          </li>
+          <li class="buy-now__item swiper-slide">
+            <div class="buy-now__card">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/200g-desktop.png    1x,
+                      ../img/order/desktop/200g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/200g-mobile.png    1x,
+                      ../img/order/mobile/200g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/200g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">200g</p>
+              </div>
+            </div>
+          </li>
+          <li class="buy-now__item swiper-slide">
+            <div class="buy-now__card">
+              <div class="buy-now__product">
+                <picture>
+                  <source
+                    srcset="
+                      ../img/order/desktop/300g-desktop.png    1x,
+                      ../img/order/desktop/300g-desktop@2x.png
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ../img/order/mobile/300g-mobile.png    1x,
+                      ../img/order/mobile/300g-mobile@2x.png 2x
+                    "
+                    media="(min-width: 375px)"
+                  />
+                  <img src="../img/order/desktop/300g-desktop.png" alt="" />
+                </picture>
+              </div>
+              <div class="buy-now__weight">
+                <p class="weight__text">300g</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <form action="" class="buy-now__form">
+        <div class="personal-info">
+          <label class="personal-info__label">
+            <p class="input-title">Personal information</p>
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="input-field"
+              type="text"
+              placeholder="Surname"
+              required
+            />
+          </label>
+        </div>
+        <div class="email-field">
+          <label class="email-field__label">
+            <p class="input-title">Email</p>
+            <input
+              class="input-field"
+              type="email"
+              placeholder="Enter you email"
+              required
+            />
+          </label>
+        </div>
+        <div class="phone-field">
+          <label class="phone-field__label">
+            <p class="input-title">Phone number</p>
+            <input
+              class="input-field phone-input"
+              type="tel"
+              placeholder="Phone number"
+              pattern="^[ 0-9]+$"
+              title="+38 (000) 000-00-00"
+              required
+            />
+            <svg class="country-flag">
+              <use href="../img/icons/symbol-defs.svg#icon-flag"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="card-field">
+          <label class="card-field__label">
+            <p class="input-title">Card</p>
+            <input
+              class="input-field"
+              type="tel"
+              placeholder="Enter card"
+              required
+            />
+            <svg class="mastercard-logo">
+              <use href="../img/icons/symbol-defs.svg#icon-card"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="comment-field">
+          <label class="comment-field__label">
+            <p class="input-title">Comment</p>
+            <textarea
+              class="comment-field input-field"
+              placeholder="Enter text"
+              name="Comment"
+              id=""
+              cols="30"
+              rows="4"
+            ></textarea>
+          </label>
+        </div>
+        <button class="buy__btn buy-now__btn">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
