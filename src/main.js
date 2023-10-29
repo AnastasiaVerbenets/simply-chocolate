@@ -1,4 +1,4 @@
-// import "./js/mobile-menu";
+import "./js/mobile-menu";
 import "./js/products-swiper";
 import "./js/opinions-swiper";
 // import "./js/modal";
