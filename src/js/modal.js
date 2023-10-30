@@ -1,24 +1,77 @@
-(() => {
-  // const refs = {
-  //   openModalBtn: document.querySelector('[data-modal-open]'),
-  //   closeModalBtn: document.querySelector('[data-modal-close]'),
-  //   modal: document.querySelector('[data-modal]'),
-  // };
+!(function (e) {
+  'function' != typeof e.matches &&
+    (e.matches =
+      e.msMatchesSelector ||
+      e.mozMatchesSelector ||
+      e.webkitMatchesSelector ||
+      function (e) {
+        for (
+          var t = this,
+            o = (t.document || t.ownerDocument).querySelectorAll(e),
+            n = 0;
+          o[n] && o[n] !== t;
 
-  // refs.openModalBtn.addEventListener('click', toggleModal);
-  // refs.closeModalBtn.addEventListener('click', toggleModal);
+        )
+          ++n;
+        return Boolean(o[n]);
+      }),
+    'function' != typeof e.closest &&
+      (e.closest = function (e) {
+        for (var t = this; t && 1 === t.nodeType; ) {
+          if (t.matches(e)) return t;
+          t = t.parentNode;
+        }
+        return null;
+      });
+})(window.Element.prototype);
 
-  const buyNowRefs = {
-    openModalBtn: document.querySelector('[data-buy-now-modal-open]'),
-    closeModalBtn: document.querySelector('[data-buy-now-modal-close]'),
-    modal: document.querySelector('[data-buy-now-modal]'),
-  };
+document.addEventListener('DOMContentLoaded', function () {
 
-  buyNowRefs.openModalBtn.addEventListener('click', toggleModal);
-  buyNowRefs.closeModalBtn.addEventListener('click', toggleModal);
+  var modalButtons = document.querySelectorAll('.js-open-modal'),
+    overlay = document.querySelector('.js-overlay-modal'),
+    closeButtons = document.querySelectorAll('.js-modal-close');
 
-  function toggleModal() {
-    // refs.modal.classList.toggle('is-hidden');
-    buyNowRefs.modal.classList.toggle('is-hidden');
-  }
-})();
+  modalButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      var modalId = this.getAttribute('data-modal'),
+        modalElem = document.querySelector(
+          '.modal[data-modal="' + modalId + '"]'
+        );
+
+      modalElem.classList.add('active');
+      overlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  }); 
+
+  closeButtons.forEach(function (item) {
+    item.addEventListener('click', function (e) {
+      var parentModal = this.closest('.modal');
+
+      parentModal.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  document.body.addEventListener(
+    'keyup',
+    function (e) {
+      var key = e.keyCode;
+
+      if (key == 27) {
+        document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.overlay').classList.remove('active');
+      }
+    },
+    false
+  );
+
+  overlay.addEventListener('click', function () {
+    document.querySelector('.modal.active').classList.remove('active');
+    this.classList.remove('active');
+    document.body.style.overflow = '';
+  });
+}); 
