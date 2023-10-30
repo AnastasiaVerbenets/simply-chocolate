@@ -73,7 +73,7 @@
 }
 
 .ingredients__hover {
-    width: 336px;
+    width: 335px;
     height: 270px;
     background-color: var(--title-color);
     position: absolute;
@@ -81,6 +81,9 @@
     left: 0;
     transform: translateY(101%);
     transition: transform 250ms ease-in;
+
+    border-radius: 15px;
+    border: 1px solid #FD9222;
 }
 
 .ingredients__item:hover .ingredients__hover {
@@ -151,7 +154,9 @@
 }
 
 .ingredients__hover-text {
-    
+    border: none;
+    background-color: transparent;
+    text-align: start;
 }
 
 .ingredients__hover-text, .ingredients__hover-benefit {
@@ -173,9 +178,9 @@
     display: none;
 }
 
-.mobile-span {
+/* .mobile-span {
     display: none;
-}
+} */
 
 .ingredients__item__title {
 }
@@ -246,10 +251,14 @@
     }
 
     .ingredients__hover {
-        width: 270px;
+        width: 269px;
     }
 
-    .desktop-span {
+    .ingredients__hover-btns {
+        width: 214px;
+    }
+
+    .more {
         display: none;
     }
 
