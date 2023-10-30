@@ -56,15 +56,6 @@
   margin-bottom: 20px;
 }
 
-.sellers__img {
-  transition: transform 500ms ease-in-out 50ms;
-}
-
-.sellers__img:hover,
-.sellers__img:focus {
-  transform: scale(1.1);
-}
-
 .sellers__item__footer {
   display: flex;
 
