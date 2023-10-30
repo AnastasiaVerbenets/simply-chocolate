@@ -13,6 +13,7 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
+  margin: 20px;
   padding: 14px;
 
   @media screen and (min-width: 768px) {
@@ -38,6 +39,8 @@
 
 .buy-now__close {
   margin-left: auto;
+
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -80,10 +83,6 @@
   margin-bottom: 32px;
 }
 
-.buy-now__item {
-  display: flex;
-}
-
 .buy-now__card {
   display: flex;
   padding: 32px 32px 22px 32px;
@@ -98,9 +97,6 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
 }
 
-.buy-now__product {
-}
-
 .buy-now__weight {
   display: flex;
   padding: 8px 27px;
@@ -111,19 +107,26 @@
   background: #fafafa;
 }
 
-.weight__text {
+.weight-checkbox {
+  display: none;
+}
+
+.weight-checkbox + label {
+  cursor: pointer;
   color: var(--text-color);
   font-size: 14px;
   font-weight: 600;
   line-height: normal;
 }
 
-.buy-now__form {
+.weight-checkbox:checked + label,
+.weight-checkbox + label:active {
+  background-color: #fd9222;
+  color: var(--title-color);
 }
+
 .personal-info {
   margin-top: 27px;
-}
-.personal-info__label {
 }
 
 .input-title {
@@ -146,6 +149,7 @@
   padding: 14px 18px;
 
   margin-bottom: 14px;
+  transform: none;
 
   transition: all 350ms ease-in-out 50ms;
 }
@@ -154,12 +158,13 @@
   color: rgba(64, 64, 64, 0.3);
 }
 
+.input-field:hover {
+  box-shadow: none;
+  border: 1px solid var(--accent-color);
+}
+
 .input-field:focus {
-  border: 1px solid #6bbbf7;
   background-color: #fff;
-  box-shadow: 0px 0px 0px 3px rgba(107, 187, 247, 0.3),
-    0px 2px 2px 0px rgba(0, 0, 0, 0.05);
-  transform: none;
 }
 
 .input-field:focus-visible {
@@ -226,4 +231,14 @@
   margin-left: 0;
   padding: 12px 28px;
   font-size: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .personal-info .input-field {
+    width: 240px;
+  }
+
+  .personal-info .input-field:last-child {
+    margin-left: 18px;
+  }
 }
