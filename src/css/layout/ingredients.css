@@ -54,7 +54,7 @@
 
 .ingredients__front-transparent .ingredients__item-title {
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -70,7 +70,7 @@
 .ingredients__item-title {
   padding-left: 28px;
   color: var(--title-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -95,7 +95,7 @@
   left: 0;
 
   transform: translateY(101%);
-  transition: transform 250ms ease-in;
+  transition: transform 400ms ease-in-out 50ms;
 
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -131,7 +131,7 @@
   padding: 6px 16px;
 
   color: var(--title-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
@@ -153,7 +153,7 @@
   padding: 6px 16px;
 
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
@@ -172,7 +172,7 @@
   overflow: hidden;
   color: #111;
   text-overflow: ellipsis;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
