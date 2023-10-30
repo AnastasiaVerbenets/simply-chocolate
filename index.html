@@ -23,8 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-e1ff3741.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-6ef7547d.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-51f0d0b1.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-de637e18.css">
   </head>
 
   <body>
@@ -1025,7 +1025,9 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <button class="opinions__btn">Leave a review</button>
+    <button class="opinions__btn js-open-modal" data-modal="2">
+      Leave a review
+    </button>
   </div>
 </section>
 
@@ -1038,7 +1040,7 @@
       finest ingredients and handcrafted with the utmost care, each piece is a
       work of art that is sure to please.
     </p>
-    <button class="subscribe__btn" type="button">
+    <button class="subscribe__btn js-open-modal" type="button" data-modal="3">
       Subscribe
     </button>
   </div>
@@ -1122,124 +1124,115 @@
 
 
     <!-- modals -->
-    <!-- <div class="submit-modal__backdrop is-hidden-submit" id="submit-modal">
-  <div class="submit-modal__first-container">
-    <div class="submit-modal__container">
-      <picture>
-        <source
-          media="(min-width: 1200px)"
-          srcset="
-            /img/pop-up/desktop/pop-up-desktop.jpg    1x,
-            /img/pop-up/desktop/pop-up-desktop@2x.jpg 2x
-          "
-        />
-        <source
-          media="(max-width: 1199px)"
-          srcset="
-            /img/pop-up/mobile/pop-up-mobile.jpg    1x,
-            /img/pop-up/mobile/pop-up-mobile@2x.jpg 2x
-          "
-        />
-        <img
-          src="/img/pop-up/mobile/pop-up-mobile.jpg"
-          alt="pop-up"
-          class="submit-modal__img"
-        />
-      </picture>
-      <button class="submit-modal__btn-close">
-        <svg class="submit-modal__close-icon">
-          <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
-        </svg>
-      </button>
-      <h2 class="submit-modal__title">
-        Explore our <br /><span class="span-title">new chocolate</span> first!
-      </h2>
-      <form class="submit-modal__form" id="submit-modal-form">
-        <input
-          type="text"
-          placeholder="Enter your email"
-          name="submit-modal__name"
-          class="submit-modal__input"
-          data-min-length="8"
-          data-max-length="30"
-        />
-        <button type="submit" class="submit-modal__btn">Submit</button>
-      </form>
-    </div>
+    <div class="modal submit-modal" data-modal="3">
+  <div class="submit-modal__container">
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="/simply-chocolate/assets/pop-up-desktop-47524f86.jpg 1x, /simply-chocolate/assets/pop-up-desktop@2x-f8e73c67.jpg 2x"
+      />
+      <source
+        media="(max-width: 1199px)"
+        srcset="/simply-chocolate/assets/pop-up-mobile-0ff8bc06.jpg 1x, /simply-chocolate/assets/pop-up-mobile@2x-78103db9.jpg 2x"
+      />
+      <img
+        src="/simply-chocolate/assets/pop-up-mobile-0ff8bc06.jpg"
+        alt="pop-up"
+        class="submit-modal__img"
+      />
+    </picture>
+    <button class="submit-modal__btn-close js-modal-close">
+      <svg class="submit-modal__close-icon">
+        <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+    <h2 class="submit-modal__title">
+      Explore our <br /><span class="span-title">new chocolate</span> first!
+    </h2>
+    <form class="submit-modal__form" id="submit-modal-form">
+      <input
+        type="text"
+        placeholder="Enter your email"
+        name="submit-modal__name"
+        class="submit-modal__input"
+        data-min-length="8"
+        data-max-length="30"
+      />
+      <button type="submit" class="submit-modal__btn">Submit</button>
+    </form>
   </div>
 </div>
- -->
-    <!-- <section class="backdrop-opinions is-hidden-opinions">
-  <div class="modal-opinions">
-    <div class="modal-opinions__container">
-      <div class="modal-opinions__general">
-        <h2 class="modal-opinions__title">
-          leave a review <br class="title-br" />
-          about <span class="span-title">OUR CHOCOLATE</span>
-        </h2>
 
-        <button class="modal-opinions__btn" type="button">
-          <svg class="modal-opinions__close-icon">
-            <use href="/img/icons/symbol-defs.svg#icon-close-modal"></use>
+    <div class="modal modal-opinions" data-modal="2">
+  <div class="modal-opinions__general">
+    <h2 class="modal-opinions__title">
+      leave a review <br class="title-br" />
+      about <span class="span-title">OUR CHOCOLATE</span>
+    </h2>
+
+    <button
+      class="js-modal-close modal-opinions__btn"
+      type="button"
+      aria-label="close button"
+    >
+      <svg class="modal-opinions__close-icon">
+        <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+  </div>
+
+  <form class="form__opinions" id="form__opinions">
+    <div class="form__opinions__container">
+      <input
+        class="form__input"
+        type="text"
+        name="username"
+        placeholder="Name"
+        pattern="[a-zA-Z]{2,15}"
+        minlength="3"
+        maxlength="15"
+      />
+
+      <input
+        class="form__input"
+        type="email"
+        name="useremail"
+        placeholder="Enter your email"
+        required
+      />
+
+      <div class="form__tel-container">
+        <input
+          class="form__input input-phone"
+          type="tel"
+          name="phone"
+          placeholder="Phone number"
+          required
+          pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          minlength="10"
+          maxlength="12"
+          title="xx-xxx-xx-xx"
+        />
+        <div class="form__tel-phone">
+          <svg class="form__tel-icon">
+            <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-flag"></use>
           </svg>
-        </button>
+          <p class="form__tel-text">+380</p>
+        </div>
       </div>
 
-      <form class="form__opinions" id="form__opinions">
-        <div class="form__opinions__container">
-          <input
-            class="form__input"
-            type="text"
-            name="username"
-            placeholder="Name"
-            pattern="[a-zA-Z]{2,15}"
-            minlength="3"
-            maxlength="15"
-          />
-
-          <input
-            class="form__input"
-            type="email"
-            name="useremail"
-            placeholder="Enter your email"
-            required
-          />
-
-          <div class="form__tel-container">
-            <input
-              class="form__input input-phone"
-              type="tel"
-              name="userphone"
-              placeholder="Phone number"
-              required
-              pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-              minlength="10"
-              maxlength="12"
-              title="xx-xxx-xx-xx"
-            />
-            <div class="form__tel-phone">
-              <svg class="form__tel-icon">
-                <use href="/img/icons/symbol-defs.svg#icon-flag"></use>
-              </svg>
-              <p class="form__tel-text">+380</p>
-            </div>
-          </div>
-
-          <textarea
-            class="form__textarea"
-            placeholder="Enter text"
-            minlength="10"
-            maxlength="500"
-            name="comment"
-          ></textarea>
-        </div>
-
-        <button class="form__btn" type="submit">Send</button>
-      </form>
+      <textarea
+        class="form__textarea"
+        placeholder="Enter text"
+        minlength="10"
+        maxlength="500"
+        name="comment"
+      ></textarea>
     </div>
-  </div>
-</section>
- -->
+  </form>
+  <button class="form__btn" type="submit">Send</button>
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
