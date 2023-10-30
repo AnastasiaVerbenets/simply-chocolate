@@ -9,12 +9,12 @@
   // refs.closeModalBtn.addEventListener('click', toggleModal);
 
   const buyNowRefs = {
-    openModalBtn: document.querySelector('[data-buy-now-modal-open]'),
+    openModalBtn: document.querySelectorAll('[data-buy-now-modal-open]'),
     closeModalBtn: document.querySelector('[data-buy-now-modal-close]'),
     modal: document.querySelector('[data-buy-now-modal]'),
   };
 
-  buyNowRefs.openModalBtn.addEventListener('click', toggleModal);
+  buyNowRefs.openModalBtn.forEach(node => node.addEventListener('click', toggleModal));
   buyNowRefs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
