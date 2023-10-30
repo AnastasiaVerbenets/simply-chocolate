@@ -6,5 +6,4 @@ import "./js/video";
 import "./js/buy-now-swiper";
 import "./js/scroll";
 import "./js/scroll-to-top";
-import "./js/opinions-modal";
 import "./js/read-more";
