@@ -6,6 +6,7 @@
   height: 350px;
 
   position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: 768px) {
     width: 516px;
@@ -78,6 +79,7 @@
     width: 276px;
   }
 }
+
 .thanks__text {
   font-size: 14px;
   color: var(--title-color);
