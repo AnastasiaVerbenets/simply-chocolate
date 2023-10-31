@@ -34,18 +34,3 @@
   visibility: visible;
   pointer-events: all;
 }
-
-/* scrollbar */
-.modal::-webkit-scrollbar {
-  width: 5px;
-}
-
-.modal::-webkit-scrollbar-track {
-  background: #fafafa;
-  margin: 15px;
-}
-
-.modal::-webkit-scrollbar-thumb {
-  background-color: var(--accent-color);
-  border-radius: 15px;
-}
