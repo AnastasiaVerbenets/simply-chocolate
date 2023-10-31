@@ -1,6 +1,3 @@
-.ingredients .container {
-}
-
 .ingredients__text-box {
   display: flex;
   align-items: center;
@@ -156,6 +153,9 @@
   border: none;
   background-color: transparent;
   text-align: start;
+
+  transform: none;
+  box-shadow: none;
 }
 
 .ingredients__hover-text,
