@@ -6,3 +6,4 @@ import "./js/video";
 import "./js/buy-now-swiper";
 
 import "./js/read-more";
+import "./js/ingredients-buttons";

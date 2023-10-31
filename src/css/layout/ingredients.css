@@ -154,6 +154,7 @@
 }
 
 .ingredients__hover-text {
+    /* display: none; */
     border: none;
     background-color: transparent;
     text-align: start;
@@ -255,6 +256,10 @@
     }
 
     .ingredients__hover-btns {
+        width: 214px;
+    }
+
+    .ingredients__hover-text {
         width: 214px;
     }
 

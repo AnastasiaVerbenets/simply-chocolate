@@ -1,6 +1,6 @@
 function readMore() {
-    var dots = document.getElementsByClassName("dots");
-    var more = document.getElementsByClassName("more");
+    const dots = document.getElementsByClassName("dots");
+    const more = document.getElementsByClassName("more");
 
     if(dots.style.display === "none") {
         dots.style.display="inline";
