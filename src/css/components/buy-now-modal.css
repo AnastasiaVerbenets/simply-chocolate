@@ -17,15 +17,47 @@
 }
 
 .buy-now__close {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 15px;
+  right: 14px;
+
+  border: none;
+  background-color: transparent;
+  fill: var(--title-color);
+  padding: 8px;
+
+  transition: all 350ms ease-in-out 50ms;
 
   cursor: pointer;
+}
+
+.buy-now__close:hover,
+.buy-now__close:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.buy-now__icon-close {
+  width: 24px;
+  height: 24px;
+  stroke: var(--text-color);
+
+  transition: all 350ms ease-in-out 50ms;
 
   @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 24px;
-    right: 24px;
+    width: 28px;
+    height: 28px;
   }
+}
+
+.buy-now__close:hover .buy-now__icon-close,
+.buy-now__close:focus .buy-now__icon-close {
+  stroke: var(--title-color);
+  transform: scale(1.1);
 }
 
 .buy-now__modal__container {

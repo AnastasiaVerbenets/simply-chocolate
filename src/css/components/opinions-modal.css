@@ -40,49 +40,49 @@
 }
 
 .modal-opinions__btn {
-  transition: all 400ms ease-in-out 50ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 15px;
+  right: 14px;
 
-  border-radius: 50%;
   border: none;
   background-color: transparent;
+  fill: var(--title-color);
+  padding: 8px;
 
-  @media screen and (min-width: 768px) {
-    /* top: 24px;
-    right: 24px; */
+  transition: all 350ms ease-in-out 50ms;
 
-    /* width: 31px;
-    height: 31px; */
-  }
+  cursor: pointer;
 }
 
-/* .modal-opinions__btn:hover,
+.modal-opinions__btn:hover,
 .modal-opinions__btn:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
-} */
+}
 
 .modal-opinions__close-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 24px;
   height: 24px;
-
   stroke: var(--text-color);
 
-  transition: all 400ms ease-in-out 50ms;
+  transition: all 350ms ease-in-out 50ms;
+
+  @media screen and (min-width: 768px) {
+    width: 28px;
+    height: 28px;
+  }
 }
 
-.modal-opinions__close-icon:hover,
-.modal-opinions__close-icon:focus {
-  stroke: var(--accent-color);
+.modal-opinions__btn:hover .modal-opinions__close-icon,
+.modal-opinions__btn:focus .modal-opinions__close-icon {
+  stroke: var(--title-color);
+  transform: scale(1.1);
 }
-
+/* ? */
 .form__opinions__container {
   display: flex;
   flex-direction: column;
