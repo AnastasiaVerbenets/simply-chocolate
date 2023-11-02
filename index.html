@@ -23,8 +23,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-51f0d0b1.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-9a98ffd9.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-6c3d2c83.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-5b658b27.css">
   </head>
 
   <body>
@@ -1013,11 +1013,11 @@
     <!-- modals -->
     <div class="buy-now__modal modal" data-modal="1">
   <div class="buy-now__modal__container">
-    <div class="buy-now__close js-modal-close">
+    <button type="button" class="buy-now__close js-modal-close">
       <svg class="buy-now__icon-close">
         <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-close-modal"></use>
       </svg>
-    </div>
+    </button>
     <h2 class="buy-now__title"><span class="span-title">BUY</span> NOW</h2>
 
     <form action="" class="buy-now__form">
@@ -1028,7 +1028,7 @@
               <div class="buy-now__product">
                 <picture>
                   <source
-                    srcset="/simply-chocolate/assets/100g-desktop-051e51b4.png 1x, /simply-chocolate/assets/100g-desktop@2x-fadf668b.png "
+                    srcset="/simply-chocolate/assets/100g-desktop-051e51b4.png 1x, /simply-chocolate/assets/100g-desktop@2x-fadf668b.png 2x"
                     media="(min-width: 768px)"
                   />
                   <source
@@ -1109,7 +1109,7 @@
           <p class="input-title">Personal information</p>
           <input class="input-field" type="text" placeholder="Name" required />
           <input
-            class="input-field"
+            class="input-field input-js"
             type="text"
             placeholder="Surname"
             required
@@ -1120,7 +1120,7 @@
         <label class="email-field__label">
           <p class="input-title">Email</p>
           <input
-            class="input-field"
+            class="input-field input-js"
             type="email"
             placeholder="Enter you email"
             required
@@ -1131,11 +1131,10 @@
         <label class="phone-field__label">
           <p class="input-title">Phone number</p>
           <input
-            class="input-field phone-input"
+            class="input-field phone-input input-js"
             type="tel"
             placeholder="Phone number"
             pattern="^[ 0-9]+$"
-            C
             required
           />
           <svg class="country-flag">
@@ -1147,7 +1146,7 @@
         <label class="card-field__label">
           <p class="input-title">Card</p>
           <input
-            class="input-field"
+            class="input-field input-js"
             type="tel"
             placeholder="Enter card"
             required
@@ -1171,7 +1170,7 @@
         </label>
       </div>
       <button
-        class="buy__btn buy-now__btn js-open-modal js-modal-close"
+        class="buy__btn buy-now__btn js-open-modal js-modal-close button-js"
         data-modal="4"
         type="button"
       >
@@ -1290,7 +1289,13 @@
         data-min-length="8"
         data-max-length="30"
       />
-      <button type="submit" class="submit-modal__btn">Submit</button>
+      <button
+        type="submit"
+        data-modal="4"
+        class="submit-modal__btn js-open-modal js-modal-close"
+      >
+        Submit
+      </button>
     </form>
   </div>
 </div>
