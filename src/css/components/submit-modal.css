@@ -54,10 +54,15 @@
 
 .submit-modal__input:hover,
 .submit-modal__input:focus {
-  border: 1px solid var(--accent-color);
-  box-shadow: 2px 3px 4px 0px rgb(187, 180, 172);
-  background-color: #fafafa;
+  box-shadow: none;
   transform: none;
+  border: 1px solid var(--accent-color);
+}
+
+.submit-modal__input:focus {
+  background-color: var(--title-color);
+  /* box-shadow: 2px 3px 4px 0px rgb(187, 180, 172); */
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 }
 
 .submit-modal__input::placeholder {
