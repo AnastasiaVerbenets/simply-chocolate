@@ -20,6 +20,7 @@
 @import url('./layout/footer.css');
 
 /* components */
+@import url('./components/preloader.css');
 @import url('./components/buy-now-modal.css');
 @import url('./components/submit-modal.css');
 @import url('./components/opinions-modal.css');
