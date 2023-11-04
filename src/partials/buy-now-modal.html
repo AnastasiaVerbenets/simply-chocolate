@@ -139,7 +139,9 @@
             class="input-field phone-input input-js"
             type="tel"
             placeholder="Phone number"
-            pattern="^[ 0-9]+$"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            minlength="10"
+            maxlength="12"
             required
           />
           <svg class="country-flag">
@@ -154,6 +156,7 @@
             class="input-field input-js"
             type="tel"
             placeholder="Enter card"
+            pattern="[0-9]{16,16}"
             required
           />
           <svg class="mastercard-logo">
@@ -168,6 +171,8 @@
             class="comment-field input-field"
             placeholder="Enter text"
             name="Comment"
+            minlength="10"
+            maxlength="500"
             id=""
             cols="30"
             rows="4"
