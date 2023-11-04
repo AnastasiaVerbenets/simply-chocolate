@@ -61,7 +61,6 @@
 
 .submit-modal__input:focus {
   background-color: var(--title-color);
-  /* box-shadow: 2px 3px 4px 0px rgb(187, 180, 172); */
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 }
 
@@ -76,6 +75,7 @@
   position: absolute;
   right: 24px;
   top: 275px;
+
   padding: 14px 28px;
   border-radius: 100px;
   background-color: var(--accent-color);

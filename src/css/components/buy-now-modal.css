@@ -160,13 +160,21 @@
   padding: 14px 18px;
 
   margin-bottom: 14px;
-  transform: none;
 
+  transform: none;
   transition: all 350ms ease-in-out 50ms;
 }
 
 .input-field::placeholder {
   color: rgba(64, 64, 64, 0.3);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.28px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+    letter-spacing: -0.36px;
+  }
 }
 
 .input-field:hover,
@@ -176,7 +184,7 @@
 }
 
 .input-field:focus {
-  background-color: #fff;
+  background-color: var(--title-color);
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
 }
 
