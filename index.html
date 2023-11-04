@@ -24,7 +24,7 @@
     />
     
     <script type="module" crossorigin src="/simply-chocolate/assets/index-6c3d2c83.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-cc2d9779.css">
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-9bcde4dd.css">
   </head>
 
   <body>
@@ -85,6 +85,7 @@
           </a>
         </li>
       </ul>
+
       <!-- menu -->
       <button class="mobile-menu__open-btn js-open-mobile-menu" type="button">
         <svg class="open__icon open-tab">
@@ -249,6 +250,7 @@
     </ul>
   </div>
 </section>
+
     <section class="ingredients section">
   <div class="container">
     <div class="ingredients__text-box">
@@ -1052,20 +1054,14 @@
               <div class="buy-now__product">
                 <picture>
                   <source
-                    srcset="
-                      /img/order/desktop/100g-desktop.png    1x,
-                      /img/order/desktop/100g-desktop@2x.png 2x
-                    "
+                    srcset="/simply-chocolate/assets/100g-desktop-051e51b4.png 1x, /simply-chocolate/assets/100g-desktop@2x-fadf668b.png 2x"
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="
-                      /img/order/mobile/100g-mobile.png    1x,
-                      /img/order/mobile/100g-mobile@2x.png 2x
-                    "
+                    srcset="/simply-chocolate/assets/100g-mobile-230615f9.png 1x, /simply-chocolate/assets/100g-mobile@2x-fe3094cb.png 2x"
                     media="(min-width: 375px)"
                   />
-                  <img src="/img/order/desktop/100g-desktop.png" alt="" />
+                  <img src="/simply-chocolate/assets/100g-desktop-051e51b4.png" alt="" />
                 </picture>
               </div>
               <div class="checkbox">
@@ -1084,20 +1080,14 @@
               <div class="buy-now__product">
                 <picture>
                   <source
-                    srcset="
-                      /img/order/desktop/200g-desktop.png    1x,
-                      /img/order/desktop/200g-desktop@2x.png
-                    "
+                    srcset="/simply-chocolate/assets/200g-desktop-721f2193.png 1x, /simply-chocolate/assets/200g-desktop@2x-9d94b073.png "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="
-                      /img/order/mobile/200g-mobile.png    1x,
-                      /img/order/mobile/200g-mobile@2x.png 2x
-                    "
+                    srcset="/simply-chocolate/assets/200g-mobile-32fc45dd.png 1x, /simply-chocolate/assets/200g-mobile@2x-bc7dda1c.png 2x"
                     media="(min-width: 375px)"
                   />
-                  <img src="/img/order/desktop/200g-desktop.png" alt="" />
+                  <img src="/simply-chocolate/assets/200g-desktop-721f2193.png" alt="" />
                 </picture>
               </div>
               <div class="checkbox">
@@ -1116,20 +1106,14 @@
               <div class="buy-now__product">
                 <picture>
                   <source
-                    srcset="
-                      /img/order/desktop/300g-desktop.png    1x,
-                      /img/order/desktop/300g-desktop@2x.png
-                    "
+                    srcset="/simply-chocolate/assets/300g-desktop-f108ee24.png 1x, /simply-chocolate/assets/300g-desktop@2x-80b00c44.png "
                     media="(min-width: 768px)"
                   />
                   <source
-                    srcset="
-                      /img/order/mobile/300g-mobile.png    1x,
-                      /img/order/mobile/300g-mobile@2x.png 2x
-                    "
+                    srcset="/simply-chocolate/assets/300g-mobile-6ec2d378.png 1x, /simply-chocolate/assets/300g-mobile@2x-1df0c28f.png 2x"
                     media="(min-width: 375px)"
                   />
-                  <img src="/img/order/desktop/300g-desktop.png" alt="" />
+                  <img src="/simply-chocolate/assets/300g-desktop-f108ee24.png" alt="" />
                 </picture>
               </div>
               <div class="checkbox">
@@ -1176,7 +1160,9 @@
             class="input-field phone-input input-js"
             type="tel"
             placeholder="Phone number"
-            pattern="^[ 0-9]+$"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            minlength="10"
+            maxlength="12"
             required
           />
           <svg class="country-flag">
@@ -1191,6 +1177,7 @@
             class="input-field input-js"
             type="tel"
             placeholder="Enter card"
+            pattern="[0-9]{16,16}"
             required
           />
           <svg class="mastercard-logo">
@@ -1205,6 +1192,8 @@
             class="comment-field input-field"
             placeholder="Enter text"
             name="Comment"
+            minlength="10"
+            maxlength="500"
             id=""
             cols="30"
             rows="4"
@@ -1243,17 +1232,18 @@
   <form class="form__opinions" id="form__opinions">
     <div class="form__opinions__container">
       <input
-        class="form__input"
+        class="form__input input-js"
         type="text"
         name="username"
         placeholder="Name"
         pattern="[a-zA-Z]{2,15}"
+        required
         minlength="3"
         maxlength="15"
       />
 
       <input
-        class="form__input"
+        class="form__input input-js"
         type="email"
         name="useremail"
         placeholder="Enter your email"
@@ -1262,7 +1252,7 @@
 
       <div class="form__tel-container">
         <input
-          class="form__input input-phone"
+          class="form__input input-phone input-js"
           type="tel"
           name="phone"
           placeholder="Phone number"
@@ -1289,7 +1279,7 @@
     </div>
   </form>
   <button
-    class="form__btn js-open-modal js-modal-close"
+    class="form__btn js-open-modal js-modal-close button-js"
     type="submit"
     data-modal="5"
   >
