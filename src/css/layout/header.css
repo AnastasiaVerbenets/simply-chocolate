@@ -1,5 +1,6 @@
 header {
   max-width: 100%;
+
   padding-top: 20px;
   padding-bottom: 14px;
 
@@ -9,8 +10,7 @@ header {
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
 }
 
@@ -41,12 +41,12 @@ header {
   width: 24px;
   height: 24px;
   transition: transform 400ms var(--animation) 80ms;
+}
 
-  &:hover,
-  &:focus {
-    transform: scale(1.13);
-    cursor: pointer;
-  }
+.logo-icon:hover,
+.logo-icon:focus {
+  transform: scale(1.13);
+  cursor: pointer;
 }
 
 .logo-icon-tab {
@@ -54,9 +54,8 @@ header {
 
   @media screen and (min-width: 768px) {
     display: block;
-    width: 21px;
-    height: 21px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 24px;
     height: 24px;
@@ -129,6 +128,7 @@ header {
     border: none;
   }
 }
+
 .open__icon {
   stroke: #000000;
   width: 28px;
