@@ -1,5 +1,5 @@
 .opinions__title {
-  color: #111;
+  color: var(--text-color);
   text-align: center;
   font-size: 20px;
   font-weight: 600;

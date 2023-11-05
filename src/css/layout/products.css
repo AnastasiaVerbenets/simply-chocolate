@@ -97,7 +97,7 @@
   padding: 8px 20px;
   border-radius: 100px;
   border: 1px solid rgba(17, 17, 17, 0.1);
-  background-color: #fafafa;
+  background-color: var(--bck-light-color);
 
   transition: all 350ms ease-in-out 70ms;
 }
