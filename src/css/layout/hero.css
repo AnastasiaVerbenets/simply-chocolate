@@ -88,22 +88,23 @@
 }
 
 .hero__title {
-  margin-bottom: 32px;
   color: var(--title-color);
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.6px;
 
+  margin-bottom: 32px;
+
   @media screen and (min-width: 768px) {
     width: 484px;
-    margin-bottom: 39px;
-
     color: var(--title-color);
     font-size: 28px;
     font-weight: 500;
     line-height: 34px;
     letter-spacing: -0.84px;
+
+    margin-bottom: 39px;
   }
 }
 

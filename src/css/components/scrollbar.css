@@ -3,7 +3,7 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: #fafafa;
+  background: var(--bck-light-color);
 }
 
 *::-webkit-scrollbar-thumb {
@@ -17,7 +17,7 @@
 }
 
 .modal::-webkit-scrollbar-track {
-  background: #fafafa;
+  background: var(--bck-light-color);
   margin: 15px;
 }
 

@@ -1,7 +1,7 @@
 .buy-now__modal {
   width: 311px;
   border-radius: 15px;
-  background: #fafafa;
+  background: var(--bck-light-color);
 
   max-height: 95vh;
 
@@ -132,7 +132,7 @@
 
 .weight-checkbox:checked + label,
 .weight-checkbox + label:active {
-  background-color: #fd9222;
+  background-color: var(--accent-color);
   color: var(--title-color);
 }
 
