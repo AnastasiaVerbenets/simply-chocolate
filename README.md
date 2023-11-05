@@ -1,3 +1,3 @@
 # Simply Chocolate
 ## Autors
-@AnastasiaVerbenets @pla1nn @OlaVasylieva7 @PanasenkoValeriy
+@AnastasiaVerbenets, @pla1nn, @OlaVasylieva7, @PanasenkoValeriy
