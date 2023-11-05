@@ -11,6 +11,10 @@
     flex-wrap: wrap;
 
     padding-top: 50px;
+    padding-bottom: 85px;
+  }
+
+  @media screen and (min-width: 1200px) {
     padding-bottom: 50px;
   }
 }
@@ -45,11 +49,11 @@
   border: 1px solid rgba(255, 255, 255, 0.5);
 
   transition: transform 300ms var(--animation) 40ms;
+}
 
-  &:hover,
-  &:focus {
-    transform: scale(1.1);
-  }
+.advantages__circle:hover,
+.advantages__circle:focus {
+  transform: scale(1.1);
 }
 
 .advantages__icon {
@@ -69,6 +73,7 @@
   font-size: 14px;
   font-weight: 400;
   letter-spacing: -0.28px;
+  width: 308px;
 }
 
 @media screen and (min-width: 768px) {
@@ -95,7 +100,7 @@
     content: '';
     position: absolute;
     top: 60px;
-    left: 310px;
+    left: 325px;
     border-right: 1px solid rgba(255, 255, 255, 0.5);
     height: 124px;
   }

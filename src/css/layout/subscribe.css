@@ -65,12 +65,12 @@
 }
 
 .subscribe__title {
-  color: var( --title-color);
+  color: var(--title-color);
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-size: 20px;
-  line-height: 24px; 
+  line-height: 24px;
   letter-spacing: -0.6px;
   font-weight: 600;
   text-transform: uppercase;
@@ -86,14 +86,14 @@
 }
 
 .subscribe__text {
-  color: var( --title-color);
+  color: var(--title-color);
   font-size: 14px;
   font-weight: 400;
   margin-left: auto;
   margin-right: auto;
   width: 326px;
   text-align: center;
-  
+
   margin-bottom: 24px;
 
   @media screen and (min-width: 768px) {
@@ -105,10 +105,9 @@
 }
 
 .subscribe__btn {
-    display: block;
-  color: var( --title-color);
+  display: block;
+  color: var(--title-color);
   font-size: 14px;
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   padding: 12px 28px;
   background-color: var(--accent-color);
@@ -119,13 +118,6 @@
   cursor: pointer;
   font-size: 14px;
   transition: all 350ms ease-in-out 50ms;
-  &:hover,
-  &:focus {
-      color: var(--accent-color);
-      transform: scale(1.02);
-      background-color: #FCF1E0;
-      box-shadow: 0 0px 20px rgba(193, 163, 98,0.7);
-  }
 
   @media screen and (min-width: 768px) {
     font-size: 18px;
@@ -133,6 +125,10 @@
   }
 }
 
-
-
-
+.subscribe__btn:hover,
+.subscribe__btn:focus {
+  color: var(--accent-color);
+  transform: scale(1.02);
+  background-color: #fcf1e0;
+  box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
+}

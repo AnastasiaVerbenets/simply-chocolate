@@ -90,7 +90,6 @@
 
 .products__btn {
   color: var(--text-color);
-  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
@@ -100,8 +99,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   background-color: #fafafa;
 
-  transition: border 350ms ease-in-out 70ms,
-    background-color 350ms ease-in-out 70ms, color 350ms ease-in-out 70ms;
+  transition: all 350ms ease-in-out 70ms;
 }
 
 .swiper-pagination-bullet {
@@ -115,6 +113,8 @@
   height: 13px;
   background-color: var(--accent-color);
   border-radius: 20px;
+
+  box-shadow: 0 0px 10px rgba(193, 163, 98, 0.7);
 }
 
 .products__swiper {
