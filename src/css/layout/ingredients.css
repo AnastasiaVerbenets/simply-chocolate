@@ -183,7 +183,7 @@
 .ingredients__hover-text,
 .ingredients__hover-benefit {
   overflow: hidden;
-  color: #111;
+  color: var(--text-color);
   text-overflow: ellipsis;
   font-size: 14px;
   font-weight: 400;
