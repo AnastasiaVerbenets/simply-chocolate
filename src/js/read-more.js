@@ -2,8 +2,6 @@ function readMore() {
     
     var containers = document.querySelectorAll('.ingredients__hover-container');
 
-    console.log("hello");
-
     containers.forEach((container) => {
         var btn = container.querySelector('.morebtn');
         var hbtns = container.querySelector('.ingredients__hover-btns');
@@ -23,13 +21,8 @@ function readMore() {
                 hbtns.style.display='none';
                 htitle.style.display='none';
             }
-    
-    
-        }
-        )
-    })
-
-    
+        })
+    }) 
 }
 
 document.addEventListener("DOMContentLoaded", readMore);
