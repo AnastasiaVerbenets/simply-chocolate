@@ -69,6 +69,7 @@
 
 .ingredients__front-transparent .ingredients__item-title {
   color: var(--text-color);
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -84,6 +85,7 @@
 .ingredients__item-title {
   padding-left: 28px;
   color: var(--title-color);
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
@@ -165,8 +167,9 @@
 }
 
 .ingredients__btn-white:hover,
-.ingredients__btn-white:focus {
+:focus {
   transform: scale(1.02);
+  background-color: #fcf1e0;
   box-shadow: 0 0px 20px rgba(193, 163, 98, 0.7);
   transition: all 350ms ease-in-out 50ms;
 }
@@ -183,8 +186,9 @@
 .ingredients__hover-text,
 .ingredients__hover-benefit {
   overflow: hidden;
-  color: var(--text-color);
+  color: #111;
   text-overflow: ellipsis;
+  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -194,6 +198,7 @@
 .ingredients__hover-benefit {
   display: none;
 }
+
 @media screen and (max-width: 767px) {
   .ingredients__item:not(:last-child) {
     margin-bottom: 20px;
@@ -204,6 +209,17 @@
   .ingredients__section {
     margin-bottom: 100px;
   }
+
+  .ingredients__title {
+    font-size: 24px;
+    width: 411px;
+    letter-spacing: -0.72px;
+  }
+
+  .ingredients__text {
+    width: 486px;
+  }
+
   @media screen and (max-width: 1199px) {
     .ingredients__list {
       gap: 32px;
