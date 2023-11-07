@@ -1,0 +1,15 @@
+/* PRELOADER */
+.preloader {
+  background: var(--title-color) url(/img/preloader.gif) no-repeat center center;
+  background-size: 20%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+}
+
+.load-video {
+  display: none;
+}
