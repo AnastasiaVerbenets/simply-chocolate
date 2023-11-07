@@ -138,6 +138,7 @@
   border: none;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 
   color: var(--title-color);
   transition: all 350ms ease-in-out 50ms;
@@ -164,6 +165,7 @@
   background-color: transparent;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
 
   color: var(--title-color);
   transition: all 350ms ease-in-out 50ms;
