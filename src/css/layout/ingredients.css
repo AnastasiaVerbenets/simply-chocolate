@@ -117,10 +117,12 @@
 }
 
 .ingredients__hover-container {
-  padding: 28px;
+  padding: 12px;
 }
 
 .ingredients__hover-title {
+  padding-left: 10px;
+  padding-top: 16px;
   margin-bottom: 8px;
   color: var(--text-color);
   font-size: 18px;
@@ -130,8 +132,10 @@
 }
 
 .ingredients__hover-btns {
+  padding-left: 10px;
   margin-bottom: 14px;
 }
+
 
 .ingredients__btn-orange {
   border-radius: 35px;
@@ -189,7 +193,7 @@
   color: #111;
   text-overflow: ellipsis;
   font-family: Montserrat;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 18px;
   letter-spacing: -0.28px;
@@ -268,9 +272,8 @@
   .ingredients__hover {
     width: 269px;
   }
-
-  .ingredients__hover-btns {
-    width: 214px;
+  .ingredients__hover-text {
+    font-size: 14px;
   }
 
   .more {
