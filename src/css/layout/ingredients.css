@@ -146,9 +146,6 @@
   transition: all 350ms ease-in-out 50ms;
 }
 
-.ingredients__text-box {
-}
-
 .ingredients__hover-text {
   border: none;
   background-color: transparent;
@@ -170,8 +167,6 @@
   letter-spacing: -0.28px;
 }
 
-.ingredients__btn-white {
-}
 
 .ingredients__hover-benefit {
   display: none;
@@ -181,8 +176,6 @@
     display: none;
 } */
 
-.ingredients__item__title {
-}
 @media screen and (max-width: 767px) {
   .ingredients__item:not(:last-child) {
     margin-bottom: 20px;
@@ -260,14 +253,27 @@
   .more {
     display: none;
   }
-
-  /* .ingredients__item-title {
-       
-    }
+}
 
 
-    .ingredients__img {
 
 
-    } */
+
+
+
+/* PRELOADER */
+.preloader {
+    background: var(--title-color) url(/img/preloader.gif)
+    no-repeat center center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+
+.load-video {
+  display: none;
 }
