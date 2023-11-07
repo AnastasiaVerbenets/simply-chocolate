@@ -23,11 +23,14 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/simply-chocolate/assets/index-ff390f0d.js"></script>
-    <link rel="stylesheet" href="/simply-chocolate/assets/index-356c8144.css">
+    <script type="module" crossorigin src="/simply-chocolate/assets/index-eb2c20c1.js"></script>
+    <link rel="stylesheet" href="/simply-chocolate/assets/index-acb9bf17.css">
   </head>
 
   <body>
+      <iframe class="load-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rIaWE1SiH-DXvYAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Bat09kKAle4?si=3L8Z3qdEL2F34HkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <div class="preloader"></div>
     <header>
   <div class="container">
     <div class="header__div">
@@ -911,7 +914,7 @@
       <div class="swiper-pagination"></div>
     </div>
 
-    <button class="opinions__btn js-open-modal" data-modal="2">
+    <button class="opinions__btn js-open-modal" data-modal="2" type="button">
       Leave a review
     </button>
   </div>
@@ -1009,13 +1012,8 @@
 </footer>
 
 
-    <!-- preloader -->
-      <iframe class="load-video" width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=rIaWE1SiH-DXvYAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Bat09kKAle4?si=3L8Z3qdEL2F34HkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-   <div class="preloader"></div>
-
     <!-- modals -->
-    <div class="buy-now__modal modal" data-modal="1">
+    <div class="buy-now__modal modal" data-modal="1" id="js-buy-now-modal">
   <div class="buy-now__modal__container">
     <button type="button" class="buy-now__close js-modal-close">
       <svg class="buy-now__icon-close">
@@ -1127,7 +1125,6 @@
             class="input-field input-js"
             type="email"
             placeholder="Enter you email"
-            required
           />
         </label>
       </div>
@@ -1141,7 +1138,6 @@
             pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             minlength="10"
             maxlength="12"
-            required
           />
           <svg class="country-flag">
             <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-flag"></use>
@@ -1156,7 +1152,6 @@
             type="tel"
             placeholder="Enter card"
             pattern="[0-9]{16,16}"
-            required
           />
           <svg class="mastercard-logo">
             <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-card"></use>
@@ -1179,9 +1174,9 @@
         </label>
       </div>
       <button
-        class="buy__btn buy-now__btn js-open-modal js-modal-close button-js"
-        data-modal="4"
-        type="button"
+        class="buy__btn buy-now__btn"
+        type="submit"
+        id="js-thanks-buy-now-modal"
       >
         Submit
       </button>
@@ -1189,7 +1184,7 @@
   </div>
 </div>
 
-<div class="modal modal-opinions" data-modal="2">
+<div class="modal modal-opinions" data-modal="2" id="js-opinions-modal">
   <div class="modal-opinions__general">
     <h2 class="modal-opinions__title">
       leave a review <br class="title-br" />
@@ -1210,7 +1205,7 @@
   <form class="form__opinions" id="form__opinions">
     <div class="form__opinions__container">
       <input
-        class="form__input input-js"
+        class="form__input"
         type="text"
         name="username"
         placeholder="Name"
@@ -1220,20 +1215,18 @@
       />
 
       <input
-        class="form__input input-js"
+        class="form__input"
         type="email"
         name="useremail"
         placeholder="Enter your email"
-        required
       />
 
       <div class="form__tel-container">
         <input
-          class="form__input input-phone input-js"
+          class="form__input input-phone"
           type="tel"
           name="phone"
           placeholder="Phone number"
-          required
           pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
           minlength="10"
           maxlength="12"
@@ -1254,14 +1247,8 @@
         name="comment"
       ></textarea>
     </div>
+    <button class="form__btn" type="submit" id="js-review-modal">Send</button>
   </form>
-  <button
-    class="form__btn js-open-modal js-modal-close button-js"
-    type="submit"
-    data-modal="5"
-  >
-    Send
-  </button>
 </div>
 
 <div class="modal submit-modal" data-modal="3">
@@ -1304,7 +1291,7 @@
 </div>
 
 <!-- buy-now thanks -->
-<div class="thanks modal" data-modal="4">
+<div class="thanks modal pop-up_buy-now" data-modal="4">
   <button class="thanks__btn js-modal-close" type="button">
     <svg class="thanks__close-icon">
       <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-close-modal"></use>
@@ -1337,7 +1324,7 @@
 </div>
 
 <!-- opinions thanks -->
-<div class="thanks modal" data-modal="5">
+<div class="thanks modal pop-up_opinions" data-modal="5">
   <button class="thanks__btn js-modal-close" type="button">
     <svg class="thanks__close-icon">
       <use href="/simply-chocolate/assets/symbol-defs-ff954dc0.svg#icon-close-modal"></use>
@@ -1376,6 +1363,7 @@
 
 
     <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     
     <script
