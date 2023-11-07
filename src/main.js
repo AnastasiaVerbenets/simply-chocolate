@@ -9,4 +9,3 @@ import "./js/scroll-to-top";
 import "./js/read-more";
 import "./js/validation-form";
 import "./js/preloader";
-import "./js/ingredients-buttons";
